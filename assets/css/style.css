@@ -16,6 +16,28 @@ body {
   box-sizing: border-box;
 }
 
+/* Reset */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Visually hidden */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -27,12 +49,6 @@ body {
   overflow: hidden;
 }
 
-img {
-  display: block;
-  /* max-width: 100%;
-  object-fit: contain; */
-}
-
 /* Container */
 .container {
   display: block;
@@ -40,17 +56,6 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
-}
-
-/* Buttons */
-
-.button {
-  margin: 0;
-  padding: 0;
-
-  border: none;
-  border-radius: 0;
-  cursor: pointer;
 }
 
 /* Header */
@@ -110,8 +115,11 @@ img {
 
 .navigation__search {
   margin-left: 30px;
+  padding: 0;
 
   background-color: inherit;
+  border: none;
+  cursor: pointer;
 
   color: #ffffff;
 }
@@ -122,4 +130,243 @@ img {
 
 .phone {
   text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 950px;
+  margin-bottom: 50px;
+
+  background: #000 url("../images/hero-bg-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.hero::before {
+  position: absolute;
+  /* top: 0;
+  right: 0;
+  left: 0; */
+  width: 100%;
+  height: 950px;
+  background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+  /* z-index: 1; */
+}
+
+.hero__inner {
+  position: relative;
+  top: 40px;
+  height: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  z-index: 2;
+}
+
+.hero__slogan {
+  margin-bottom: 10px;
+
+  color: #fb9902;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.hero__text {
+  max-width: 600px;
+  margin-bottom: 25px;
+  
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  padding: 10px 25px;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  color: #222222;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  transition: color 0.1s, background-color 0.2s linear;
+}
+
+.button:hover {
+  background-color: #fb9902;
+  color: #ffffff;
+}
+
+.button--primary {
+  background-color: #fb9902;
+  color: #ffffff;
+}
+
+.button--primary:hover {
+  background-color: #ffffff;
+  color: #fb9902;
+}
+
+/* Section */
+.section {
+  padding: 50px 0;
+
+  background-color: #0d0f11;
+}
+
+.section--light {
+  background-color: #131619;
+}
+
+/* About */
+.about__title {
+  margin-bottom: 20px;
+
+  color: #fb9902;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about_subtitle {
+  margin-bottom: 30px;
+  padding: 0 200px;
+
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: italic;
+  text-align: center;
+}
+
+.about__intro {
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+
+  background: #0d0f11 url("../images/temp.webp") no-repeat center right 150px;
+  background-size: contain;
+}
+
+.about__info {
+  max-width: 560px;
+}
+
+.about__slogan {
+  margin-bottom: 15px;
+
+  color: #fb9902;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+}
+
+.about__text {
+  padding: 10px 0;
+
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.about__text p {
+  margin-bottom: 20px;
+}
+
+/* Advantages */
+.advantages__title {
+  margin-bottom: 50px;
+
+  color: #fb9902;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.advantages__item {
+  display: flex;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+.advantages__item:last-child {
+  margin-right: 0;
+}
+
+/* Advantage */
+.advantage {
+  display: flex;
+  max-width: 360px;
+  
+  background-color: #0d0f11;
+}
+
+.advantage__image {
+  position: relative;
+  display: block;
+  min-width: 100px;
+  min-height: 100px;
+
+  background-color: #fff;
+}
+
+.advantage__image::before {
+  position: absolute; 
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  left: 15px;
+  content: "";
+}
+
+.advantage__image--tatoo::before {
+  background: #ffffff url("../images/tatoo-machine-icon.png") no-repeat center;
+}
+
+.advantage__description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 15px 15px 10px;
+}
+
+.advantage__title {
+  margin-bottom: 10px;
+  
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.advantage__text {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.2;
 }

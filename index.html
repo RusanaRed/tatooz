@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <title>Tatooz</title>
 </head>
 <body>
+
+  <!-- Header -->
   <header class="header">
     <container class="container">
       <nav class="navigation">
-        <a class="logo" href="index.html">
+        <a class="logo">
           <img src="assets/images/logo.png" width="190" height="38" alt="Логотип сайта.">
         </a>
         <div class="navigation__wrapper">
@@ -38,7 +40,7 @@
               <a class="navigation__link" href="#">Контакты</a>
             </li>
           </ul>
-          <button class="navigation__search button" type="button">
+          <button class="navigation__search" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
               <path fill="currentColor" d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/>
             </svg>
@@ -52,6 +54,95 @@
     </container>
   </header>
 
+  <main>
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <h2 class="hero__slogan">We Provide Forever.</h2>
+          <p class="hero__text">Мы &#8212; профессионалы своего дела. Пигменты от ведущих производителей, стерильность, современное оборудование, индивидуальный подход и доступные цены.</p>
+          <button class="button button--primary" type="button">Записаться</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section">
+      <div class="container">
+        <div class="about">
+          <h2 class="about__title">О студии</h2>
+          <p class="about_subtitle">Уже 12 лет мы, не покладая тату-машинок, игл для пирсинга, лазеров для удаления и планшетов для рисования, делаем людей счастливее, красивее и увереннее в себе.</p>
+          <div class="about__intro">
+            <div class="about__info">
+              <h3 class="about__slogan">Our Tattoos Last Longer Than Most Marriages.</h3>
+              <div class="about__text">
+                <p> Можно долго перечислять, чем мы можем быть полезны в вопросах татуировки и пирсинга, но проще сказать, что мы действительно можем всё! И да, мы этим гордимся. Как и качеством наших работ, стерильностью салонов, современностью инструментов и подхода к работе. А ещё &#8212; нашей командой.</p>
+                <p>Записывайся на консультации, приходи в гости, взгляни своими глазами новую историю татуировки, которую создаем мы, TATOOZ.</p>
+              </div>
+              <a href="#" class="button">Услуги</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light">
+      <div class="container">
+        <div class="advantages">
+          <h2 class="advantages__title">Почему стоит обратиться именно к нам?</h2>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--tatoo"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Индивидуальный подход</p>
+                  <p class="advantage__text">Разработка эскиза с учетом пожеланий клиента</p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--tatoo"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Оборудование</p>
+                  <p class="advantage__text">Качественные инструменты и расходные материалы</p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--tatoo"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Стерильность</p>
+                  <p class="advantage__text">Соответствие санитарным нормам</p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--tatoo"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Тату в день обращения</p>
+                  <p class="advantage__text">Свободные скетчи по выгодной стоимости</p>
+                </div>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--tatoo"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Тату в день обращения</p>
+                  <p class="advantage__text">Свободные скетчи по выгодной стоимости</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
 </body>
 </html>
