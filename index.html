@@ -62,7 +62,7 @@
         <div class="hero__inner">
           <h2 class="hero__slogan">We Provide Forever.</h2>
           <p class="hero__text">Мы &#8212; профессионалы своего дела. Пигменты от ведущих производителей, стерильность, современное оборудование, индивидуальный подход и доступные цены.</p>
-          <button class="button button--primary" type="button">Записаться</button>
+          <button class="hero__button button button--primary" type="button">Записаться</button>
         </div>
       </div>
     </div>
@@ -88,17 +88,7 @@
     <section class="section section--light">
       <div class="container">
         <h2 class="section__title">Почему стоит обратиться именно к нам?</h2>
-        <ul class="advantages">
-          <li class="advantages__item">
-            <div class="advantage">
-              <span class="advantage__image advantage__image--tatoo"></span>
-              <div class="advantage__description">
-                <p class="advantage__title">Индивидуальный подход</p>
-                <p class="advantage__text">Разработка эскиза с учетом пожеланий клиента</p>
-              </div>
-            </div>
-          </li>
-
+        <ul class="advantages">        
           <li class="advantages__item">
             <div class="advantage">
               <span class="advantage__image advantage__image--tatoo"></span>
@@ -123,8 +113,18 @@
             <div class="advantage">
               <span class="advantage__image advantage__image--tatoo"></span>
               <div class="advantage__description">
-                <p class="advantage__title">Тату в день обращения</p>
-                <p class="advantage__text">Свободные скетчи по выгодной стоимости</p>
+                <p class="advantage__title">Индивидуальный подход</p>
+                <p class="advantage__text">Разработка эскиза с учетом пожеланий клиента</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="advantages__item">
+            <div class="advantage">
+              <span class="advantage__image advantage__image--tatoo"></span>
+              <div class="advantage__description">
+                <p class="advantage__title">Выбор</p>
+                <p class="advantage__text">Работа во всех популярных тату-стилях</p>
               </div>
             </div>
           </li>
@@ -148,10 +148,11 @@
         <p class="section_subtitle">С нами вы всегда на высоте!</p>
         <div class="gallery">
           <form class="gallery__filters-form" action="index.html" method="get" autocomplete="off">
-            <button class="button filters-form__button filters-form__button--active" id="filter-default">Все</button>
-            <button class="button filters-form__button" id="filter-default">Тату на теле</button>
-            <button class="button filters-form__button" id="filter-default">Тату на руке</button>
-            <button class="button filters-form__button" id="filter-default">Тату на ноге</button>
+            <button class="filters-form__button filters-form__button--active button button--small" id="filter-default">Все</button>
+            <button class="filters-form__button button button--small" id="filter-default">Тату на теле</button>
+            <button class="filters-form__button button button--small" id="filter-default">Тату на руках</button>
+            <button class="filters-form__button button button--small" id="filter-default">Тату на ногах</button>
+            <button class="filters-form__button button button--small" id="filter-default">Тату на голове</button>
           </form>
 
           <ul class="gallery__photos">
@@ -242,10 +243,70 @@
                 <img src="assets/images/gallery/g8.jpg.webp" alt="" class="photos__image">
               </a>
             </li>
+
+            <li class="photos__item">
+              <a href="#" class="photos__link">
+                <div class="photos__info">
+                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                  <div class="photos__style">Стиль: <span>Реализм</span></div>
+                </div>
+                <img src="assets/images/gallery/g1.jpg.webp" alt="" class="photos__image">
+              </a>
+            </li>
+
+            <li class="photos__item">
+              <a href="#" class="photos__link">
+                <div class="photos__info">
+                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                  <div class="photos__style">Стиль: <span>Реализм</span></div>
+                </div>
+                <img src="assets/images/gallery/g2.jpg.webp" alt="" class="photos__image">
+              </a>
+            </li>
+
+            <li class="photos__item">
+              <a href="#" class="photos__link">
+                <div class="photos__info">
+                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                  <div class="photos__style">Стиль: <span>Реализм</span></div>
+                </div>
+                <img src="assets/images/gallery/g3.jpg.webp" alt="" class="photos__image">
+              </a>
+            </li>
+
+            <li class="photos__item">
+              <a href="#" class="photos__link">
+                <div class="photos__info">
+                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                  <div class="photos__style">Стиль: <span>Реализм</span></div>
+                </div>
+                <img src="assets/images/gallery/g4.jpg.webp" alt="" class="photos__image">
+              </a>
+            </li>
           </ul>
+
+          <div class="gallery__pagination">
+            <a href="#" class="gallery__button button">Все работы</a>
+            <ul class="pagination__list">
+              <!-- <li class="pagination__item">
+                <a href="#" class="pagination__link button button--small">&#8249;</a>
+              </li> -->
+              <li class="pagination__item">
+                <a class="pagination__link button button--small pagination__link--current">1</a>
+              </li>
+              <li class="pagination__item">
+                <a href="#" class="pagination__link button button--small">&#8250;</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
+
 
 
   </main>
