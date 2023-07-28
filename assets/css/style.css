@@ -314,6 +314,7 @@ img {
   margin-right: 0;
 }
 
+
 /* Advantage */
 .advantage {
   display: flex;
@@ -322,33 +323,40 @@ img {
   background-color: #0d0f11;
 }
 
+.advantage:hover .advantage__image {
+  transform: translate3d(-10px, -10px, 0);
+}
+
 .advantage__image {
   position: relative;
   display: block;
   min-width: 100px;
   min-height: 100px;
 
-  background-color: #fff;
+  background-color: #191b1e;
+
+  transition: transform 0.3s linear;
 }
 
 .advantage__image::before {
   position: absolute; 
-  width: 50px;
-  height: 50px;
-  top: 15px;
-  left: 15px;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  left: 20px;
   content: "";
 }
 
 .advantage__image--tatoo::before {
-  background: #ffffff url("../images/tatoo-machine-icon.png") no-repeat center;
+  background: #191b1e url("../images/tatoo-machine-icon.svg") no-repeat center;
+  background-size: contain;
 }
 
 .advantage__description {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 15px 15px 15px 10px;
+  padding: 10px 10px 10px 15px;
 }
 
 .advantage__title {
