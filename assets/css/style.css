@@ -498,7 +498,7 @@ img {
   align-items: center;
   position: absolute;
   right: 0;
-  top: 3px;
+  top: 5px;
 }
 
 .pagination__item {
@@ -510,7 +510,29 @@ img {
 }
 
 .pagination__link {
+  display: inline-block;
   padding: 8px 15px;
+
+  background-color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+
+  color: #222222;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  transition: color 0.1s, background-color 0.2s linear;
+}
+
+.pagination__link:hover {
+  background-color: #fb9902;
+  color: #ffffff;
 }
 
 .pagination__link--current {
