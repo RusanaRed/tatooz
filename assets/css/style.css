@@ -745,7 +745,7 @@ img {
 
 .team__description {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.4;
   font-style: italic;
 }
@@ -784,4 +784,40 @@ img {
 .social__icon {
   width: 100%;
   height: auto;
+}
+
+
+/* Reviews */
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.reviews__image {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 30px;
+
+  border-radius: 50%;
+}
+
+.reviews__name {
+  margin-bottom: 20px;
+
+  color: #fb9902;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.reviews__text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.4;
 }
