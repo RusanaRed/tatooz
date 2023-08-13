@@ -969,3 +969,97 @@ img {
 .accordion__text a:hover {
   text-decoration: underline;
 }
+
+
+/* Consultation */
+.consultation {
+  position: relative;
+  z-index: 2;
+
+  padding: 90px 0 60px;
+
+  background: #000 url("../images/7.jpg.webp") no-repeat center;
+  background-size: cover;
+}
+
+.consultation::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.consultation__wrapper {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.consultation__image {
+  width: 50%;
+}
+
+.consultation-form {
+  width: 50%;
+  padding-left: 55px;
+}
+
+.consultation-form__title {
+  margin-bottom: 15px;
+
+  color: #fb9902;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.consultation-form__text {
+  margin-bottom: 30px;
+
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+
+/* Form */
+.form__group {
+  margin-bottom: 40px;
+}
+
+.input {
+  display: block;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 12px;
+
+  transition: border-color 0.1s linear;
+}
+
+.input::placeholder {
+  color: #d4d3d3;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #fb9902;
+}
+
+
