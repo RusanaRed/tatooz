@@ -319,16 +319,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.advantages__item {
-  display: flex;
-  margin-right: 15px;
-  margin-bottom: 25px;
-}
-
-.advantages__item:last-child {
-  margin-right: 0;
+  gap: 25px;
 }
 
 
@@ -347,8 +338,8 @@ img {
 .advantage__image {
   position: relative;
   display: block;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 110px;
+  min-height: 110px;
 
   background-color: #191b1e;
 
@@ -359,21 +350,41 @@ img {
   position: absolute; 
   width: 60px;
   height: 60px;
-  top: 20px;
-  left: 20px;
+  top: 25px;
+  left: 25px;
   content: "";
 }
 
-.advantage__image--tatoo::before {
-  background: #191b1e url("../images/tatoo-machine-icon.svg") no-repeat center;
-  background-size: contain;
+.advantage__image--supplies::before {
+  background: #191b1e url("../images/icons/tattoo-supplies-icon.svg") no-repeat center;
+  background-size: cover;
+}
+
+.advantage__image--tattoo-table::before {
+  background: #191b1e url("../images/icons/tattoo-table-icon.svg") no-repeat center;
+  background-size: cover;
+}
+
+.advantage__image--hands::before {
+  background: #191b1e url("../images/icons/hands-icon.svg") no-repeat center;
+  background-size: cover;
+}
+
+.advantage__image--sketching::before {
+  background: #191b1e url("../images/icons/sketching-icon.svg") no-repeat center;
+  background-size: cover;
+}
+
+.advantage__image--catalogue::before {
+  background: #191b1e url("../images/icons/catalogue-icon.svg") no-repeat center;
+  background-size: cover;
 }
 
 .advantage__description {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10px 10px 10px 15px;
+  padding: 15px 15px 15px 15px;
 }
 
 .advantage__title {
@@ -593,7 +604,32 @@ img {
 }
 
 .services__image--tatoo-machine::before {
-  background: url("../images/icons/tatoo-machine-icon.svg") no-repeat center;
+  background: url("../images/icons/tatoo-machine-icon.svg") no-repeat ;
+  background-size: contain;
+}
+
+.services__image--tattoo-pen::before {
+  background: url("../images/icons/ink-hand-sewing-needles-icon.svg") no-repeat center;
+  background-size: contain;
+}
+
+.services__image--piercing::before {
+  background: url("../images/icons/piercing-icon.svg") no-repeat center;
+  background-size: contain;
+}
+
+.services__image--flower::before {
+  background: url("../images/icons/flower-icon.svg") no-repeat center;
+  background-size: contain;
+}
+
+.services__image--cleaning-brush::before {
+  background: url("../images/icons/cleaning-brush-icon.svg") no-repeat center;
+  background-size: contain;
+}
+
+.services__image--tattoo-master::before {
+  background: url("../images/icons/tattoo-master-icon.svg") no-repeat center;
   background-size: contain;
 }
 
