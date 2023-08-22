@@ -1370,16 +1370,14 @@ img {
   background-color: #0d0f11;
 
   color: #ffffff;
-  font-size: 14px;
-  line-height: 1.8;
 }
 
 .footer__inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 40px;
-  padding-bottom: 40px;
+  
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 
   border-bottom: 1px #fb9902 solid;
 }
@@ -1390,10 +1388,14 @@ img {
   width: 23%;
   gap: 20px;
 
+  font-size: 16px;
+  line-height: 1.6;
   font-weight: 600;
 }
 
 .footer__col--first {
+  font-size: 14px;
+  line-height: 1.8;
   font-weight: normal;
 }
 
@@ -1437,7 +1439,8 @@ img {
 .footer__tel {
   display: flex;
   justify-content: end;
-  gap: 10px;
+  align-items: center;
+  gap: 6px;
 }
 
 .footer__tel:hover .footer__link {
@@ -1445,6 +1448,11 @@ img {
 }
 
 .footer__tel-icon {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
+}
+
+.footer__copy {
+  font-size: 14px;
+  line-height: 1.8;
 }
