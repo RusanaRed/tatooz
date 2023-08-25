@@ -86,7 +86,7 @@ img {
   text-decoration: none;
   text-align: center;
 
-  transition: color 0.1s, background-color 0.2s linear;
+  transition: color 0.2s, background-color 0.2s ease-out;
 }
 
 .button:hover {
@@ -228,8 +228,7 @@ img {
 }
 
 .hero__text {
-  max-width: 600px;
-  margin-bottom: 25px;
+  max-width: 560px;
   
   color: #ffffff;
   font-size: 16px;
@@ -237,6 +236,7 @@ img {
 }
 
 .hero__button {
+  margin-top: 25px;
   font-weight: 400;
 }
 
@@ -421,6 +421,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  margin-bottom: 20px;
 }
 
 .gallery__pagination {
@@ -735,12 +737,11 @@ img {
 .team__list {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px 40px;
 }
 
 .team__item {
   width: 25%;
-  margin-bottom: 30px;
   padding: 0 15px;
 
   text-align: center;
@@ -795,10 +796,6 @@ img {
 .team__social {
   max-width: 105px;
   margin-top: 25px;
-}
-
-.team__button {
-  margin-top: 10px;
 }
 
 
@@ -1110,7 +1107,7 @@ img {
 .articles {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
+  margin: 0 -15px 40px;
 }
 
 .articles__item {
@@ -1118,7 +1115,7 @@ img {
   flex-direction: column;
 
   width: 25%;
-  margin: 0 15px 30px;
+  margin: 0 15px;
 
   background-color: #131619;
 }
@@ -1208,7 +1205,6 @@ img {
   font-size: 17px;
   line-height: 1.1;
   font-weight: 700;
-  text-transform: capitalize;
 }
 
 .articles__title:hover {
