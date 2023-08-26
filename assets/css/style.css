@@ -864,13 +864,18 @@ img {
   text-align: center;
 }
 
-.reviews__image {
+.reviews__image-wrapper {
   width: 180px;
   height: 180px;
   margin-bottom: 30px;
-
+  
+  overflow: hidden;
   border-radius: 50%;
 }
+
+/* .reviews__image {
+  
+} */
 
 .reviews__name {
   margin-bottom: 20px;
