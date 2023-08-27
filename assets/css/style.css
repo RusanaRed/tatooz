@@ -1167,6 +1167,9 @@ img {
 
 .articles__content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 10px 20px 30px;
 }
 
@@ -1181,7 +1184,7 @@ img {
   width: 262px;
   height: 34px;
 
-  background: url("../images/blog-element.svg") no-repeat;
+  background: url("../images/blog/blog-element.svg") no-repeat;
   background-size: cover;
 } 
 
@@ -1256,6 +1259,7 @@ img {
 }
 
 .articles__text {
+  flex-grow: 1;
   margin-bottom: 15px;
 
   color: #ffffff;
