@@ -85,6 +85,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 0.3px;
 
   transition: color 0.2s, background-color 0.2s ease-out;
 }
@@ -116,6 +117,7 @@ img {
 
   font-size: 12px;
   font-weight: 700;
+  letter-spacing: 0;
 }
 
 
@@ -225,7 +227,7 @@ img {
 }
 
 .hero__slogan {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   color: #fb9902;
   font-family: 'Montserrat', sans-serif;
@@ -236,14 +238,15 @@ img {
 
 .hero__text {
   max-width: 560px;
+  margin-bottom: 20px;
   
   color: #ffffff;
   font-size: 16px;
   line-height: 1.6;
 }
 
-.hero__button {
-  margin-top: 25px;
+.hero__text p + p {
+  margin-top: 10px;
 }
 
 
@@ -262,7 +265,7 @@ img {
   position: relative;
   height: 700px;
   padding: 0;
-  
+
   background-color: #d4d3d3;
 }
 
