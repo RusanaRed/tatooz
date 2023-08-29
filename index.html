@@ -877,6 +877,7 @@
       </div>
     </section>
 
+    <!-- Contacts -->
     <section class="section section--map">
       <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adcc8f2858653eff5b9b677d8ff87785a87ac38bbc12fb8709ab70f14718b2455&amp;source=constructor"
           width="500" 
@@ -956,9 +957,9 @@
         </div>
       </div>
     </section>
-
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
@@ -1003,6 +1004,50 @@
       <div class="footer__copy">2011-2023 &#169; Все права защищены</div>
     </div>
   </footer>
+
+  <!-- Modals -->
+  <div class="modal id="getСonsultationModal">
+    <div class="modal__inner">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h4 class="modal__title">Остались вопросы?</h4>
+          <div class="modal__text">
+            <p>Оставьте свои контакты и мы с вами свяжемся!</p>
+          </div>
+        </div>
+
+        <form class="form" action="/" method="post">
+          <div class="form__group">
+            <input class="input input--user" type="text" placeholder="Имя">
+            <input class="input input--phone" type="tel" placeholder="Телефон">
+          </div>
+          <button class="button button--primary" type="submit">Получить консультацию</button>
+        </form>
+      </div>
+
+      <button class="modal__close" type="button">
+        <img src="assets/images/circle.svg" alt="">
+      </button>
+    </div><!-- /.modal__inner -->
+  </div><!-- /.modal -->
+
+
+  <div class="modal id="thanksModal">
+    <div class="modal__inner">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h4 class="modal__title">Спасибо!</h4>
+          <div class="modal__text">
+            <p>Наш администратор скоро вам позвонит</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="modal__close" type="button">
+        <img src="assets/images/circle.svg" alt="">
+      </button>
+    </div><!-- /.modal__inner -->
+  </div><!-- /.modal -->
 
 </body>
 </html>

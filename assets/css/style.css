@@ -10,6 +10,10 @@ body {
   line-height: 1.8;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -102,7 +106,7 @@ img {
 
 .button--primary:hover {
   background-color: #ffffff;
-  color: #fb9902;
+  color: #222222;
 }
 
 .button--secondary {
@@ -1094,6 +1098,10 @@ img {
   padding-left: 55px;
 }
 
+.consultation-form__header {
+  margin-bottom: 30px;
+}
+
 .consultation-form__title {
   margin-bottom: 15px;
 
@@ -1105,8 +1113,6 @@ img {
 }
 
 .consultation-form__text {
-  margin-bottom: 30px;
-
   color: #ffffff;
   font-size: 16px;
   line-height: 1.6;
@@ -1116,7 +1122,7 @@ img {
 
 /* Form */
 .form__group {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .input {
@@ -1132,13 +1138,14 @@ img {
 
   color: #ffffff;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 14px;
 
   transition: border-color 0.1s linear;
 }
 
 .input::placeholder {
   color: #d4d3d3;
+  font-style: italic;
 }
 
 .input:focus {
@@ -1508,4 +1515,89 @@ img {
 .footer__copy {
   font-size: 14px;
   line-height: 1.8;
+}
+
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal__inner {
+  position: relative;
+  width: 850px;
+  padding: 25px;
+
+  background-color: #0d0f11;
+}
+
+.modal__content {
+  padding: 70px 80px;
+
+  background-image: url("./../images/7.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: left -350px top -40px;
+  border: 1px solid #fff;
+}
+
+.modal__header {
+  margin-bottom: 30px;
+}
+
+.modal__title {
+  margin-bottom: 10px;
+
+  color: #fb9902;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.modal__text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.modal__close {
+  position: absolute;
+  top: -26px;
+  right: -26px;
+  z-index: 1;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  transition: transform 0.2s linear;
+}
+
+.modal__close:hover {
+  transform: rotate(90deg);
+}
+
+.modal__close img {
+  display: block;
 }
