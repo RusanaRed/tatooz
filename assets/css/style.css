@@ -284,7 +284,7 @@ img {
   text-align: center;
 }
 
-.section_subtitle {
+.section__subtitle {
   margin-top: -30px;
   margin-bottom: 45px;
   padding: 0 200px;
@@ -1155,7 +1155,7 @@ img {
 
 
 /* Articles */
-.articles {
+.articles__list {
   display: flex;
   justify-content: space-between;
   margin: 0 -15px 40px;
