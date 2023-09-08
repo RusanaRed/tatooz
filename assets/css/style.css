@@ -312,7 +312,7 @@ img {
   text-align: center;
 }
 
-.section__subtitle {
+.section__suptitle {
   margin-top: -30px;
   margin-bottom: 45px;
   padding: 0 200px;
@@ -321,6 +321,17 @@ img {
   font-size: 16px;
   line-height: 1.6;
   font-style: italic;
+  text-align: center;
+}
+
+.section__subtitle {
+  margin-bottom: 30px;
+
+  color: #fb9902;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -336,14 +347,7 @@ img {
 }
 
 .about__slogan {
-  margin-bottom: 30px;
-
-  color: #fb9902;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 23px;
-  line-height: 1.1;
-  font-weight: 700;
-  text-align: center;
+  
 }
 
 .about__text {
@@ -458,7 +462,7 @@ img {
   
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.1;
   font-weight: 600;
 }
@@ -624,7 +628,8 @@ img {
 .services__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 23px;
 }
 
 .services__item {
@@ -633,7 +638,6 @@ img {
   justify-content: space-between;
 
   width: 365px;
-  margin-bottom: 23px;
   padding: 40px 40px 40px;
 
   background-color: #0d0f11;
@@ -706,7 +710,7 @@ img {
 
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.1;
   font-weight: 600;
 
@@ -729,7 +733,7 @@ img {
 }
 
 .services__button {
-  margin-top: 17px;
+  margin-top: 40px;
 }
 
 
@@ -773,7 +777,7 @@ img {
   color: #fb9902;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
-  line-height: 1.1;
+  line-height: 1.3;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -908,16 +912,12 @@ img {
   border-radius: 50%;
 }
 
-/* .reviews__image {
-  
-} */
-
 .reviews__name {
   margin-bottom: 20px;
 
   color: #fb9902;
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 1.1;
   font-weight: 700;
 }
@@ -940,14 +940,7 @@ img {
 }
 
 .faq__title {
-  margin-bottom: 30px;
-
-  color: #fb9902;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 23px;
-  line-height: 1.1;
-  font-weight: 700;
-  text-align: center;
+  
 }
 
 .faq__image-wrapper {
@@ -1649,11 +1642,20 @@ img {
   }
 }  */
 
+@media (max-width: 1199px) {
+  
+  /* Advantage */
+  .advantage {
+    width: 400px;
+    max-width: none;
+  }
+}
 
-@media (max-width: 1099px) {
+
+/* @media (max-width: 1099px) { */
   
   /* About */
-  .about {
+  /* .about {
     flex-direction: column;
     justify-content: flex-end;
   }
@@ -1672,8 +1674,8 @@ img {
   .about__image-wrapper {
     width: 115%;
     margin: 0;
-  }
-}
+  } */
+/* } */
 
 
 @media (max-width: 999px) {
@@ -1721,12 +1723,16 @@ img {
     height: 900px;
   }
 
+  .hero__slogan {
+    font-size: 45px;
+  }
+
   /* Section */
   .section {
     padding: 70px 0;
   }
 
-  .section__subtitle {
+  .section__suptitle {
     margin-top: -30px;
     margin-bottom: 30px;
     padding: 0 120px;
@@ -1746,17 +1752,94 @@ img {
     margin-bottom: 20px;
   }
 
+  /* Advantages */
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .advantages__item {
+    min-width: 70%;
+    width: 70%;
+  }
+
+  /* Advantage */
+  .advantage {
+    width: 100%;
+  }
+
+  .advantage__description {
+    padding: 15px 25px;
+  }
+
+  /* Promo */
+  .promo {
+    padding: 70px 0;
+  }
+
+  .promo__content {
+    max-width: 80%;
+  }
+
+  .promo__title {
+    font-size: 28px;
+  }
+
+  /* Reviews */
+  .reviews__item {
+    max-width: 60%;
+  }
+
+  .reviews__image-wrapper {
+    width: 140px;
+    height: 140px;
+  }
+
 
 }
 
 
-@media (max-width: 854px) {
-  .about {
+@media (max-width: 849px) {
+  /* .about {
     margin-bottom: 170px;
   }
 
   .about__info {
     margin-bottom: -20%;
+  } */
+
+  /* Services */
+  .services__list {
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .services__item {
+    width: 65%;
+  }
+
+  .services__description {
+    margin-bottom: 20px;
+  }
+
+  /* Promo */
+  .promo {
+    padding: 70px 0;
+  }
+
+  .promo__content {
+    max-width: 90%;
+  }
+
+  /* Reviews */
+  .reviews__item {
+    max-width: 70%;
+  }
+
+  .reviews__image-wrapper {
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -1777,7 +1860,7 @@ img {
   /* Hero */
   .hero,
   .hero::before {
-    height: 800px;
+    height: 850px;
   }
 
   .hero__inner {
@@ -1785,15 +1868,30 @@ img {
     padding-right: 10px;
   }
 
+  .hero__slogan {
+    font-size: 30px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+  }
+
   /* Section */
   .section {
     padding: 60px 0;
   }
 
+  .section__title {
+    font-size: 25px;
+  }
+
   .section__subtitle {
-    margin-top: -30px;
-    margin-bottom: 30px;
+    font-size: 23px;
+  }
+
+  .section__suptitle {
     padding: 0 60px;
+    font-size: 14px;
   }
 
   /* About */
@@ -1805,13 +1903,61 @@ img {
     margin-bottom: -40%;
     padding: 20px 40px;
   }
+
+  .about__slogan {
+    font-size: 23px;
+  }
+
+  /* Advantages */
+  .advantages__item {
+    min-width: 80%;
+    width: 80%;
+  }
+
+  /* Services */
+  .services__item {
+    width: 70%;
+  }
+
+  /* Promo */
+  .promo__content {
+    max-width: 90%;
+  }
+
+  .promo__title {
+    font-size: 23px;
+  }
+
+  .promo__text {
+    font-size: 14px;
+  }
+
+  /* Reviews */
+  .reviews__item {
+    max-width: 65%;
+  }
+
+  .reviews__image-wrapper {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+
+  .reviews__name {
+    margin-bottom: 15px;
+  }
+
+  .reviews__text {
+    font-size: 14px;
+  }
+
 }
 
 
 @media (max-width: 644px) {
   
   /* About */
-  .about {
+  /* .about {
     margin: 0;
     align-items: flex-start;
   }
@@ -1831,7 +1977,7 @@ img {
   .about__image-wrapper {
     order: 1;
     margin-left: -30px;
-  }
+  } */
 }
 
 
@@ -1851,6 +1997,57 @@ img {
   .about__button:not(:last-child) {
     margin-bottom: 10px;
   }
+
+  /* Section */
+  .section__title {
+    margin-bottom: 40px;
+  }
+
+  .section__suptitle {
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
+
+  /* Advantages */
+  .advantages__item {
+    min-width: 90%;
+    width: 90%;
+  }
+
+  /* Advantage */
+  .advantage__description {
+    padding: 15px;
+  }
+
+  /* Services */
+  .services__item {
+    width: 90%;
+  }
+
+  /* Promo */
+  .promo {
+    padding: 50px 0;
+  }
+
+  .promo__content {
+    max-width: 100%;
+  }
+
+  .promo__title {
+    font-size: 23px;
+  }
+
+  /* Reviews */
+  .reviews__item {
+    max-width: 75%;
+  }
+
+  .reviews__image-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  
 }
 
 @media (max-width: 479px) {
@@ -1860,5 +2057,41 @@ img {
     max-width: 450px;
   }
 
+  /* Section */
+  .section__title {
+    font-size: 23px;
+  }
 
+  .section__subtitle {
+    font-size: 20px;
+  }
+
+  /* Advantages */
+  .advantages {
+    padding: 0;
+  }
+
+  .advantages__item {
+    min-width: none;
+    width: 100%;
+  }
+
+  /* Advantage */
+  .advantage__description {
+    padding: 15px 20px;
+  }
+
+  /* Services */
+  .services__item {
+    width: 100%;
+  }
+
+  /* Reviews */
+  .reviews__item {
+    max-width: 95%;
+  }
+
+  .reviews__text {
+    text-align: left;
+  }
 }
