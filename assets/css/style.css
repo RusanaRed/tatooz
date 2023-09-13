@@ -65,7 +65,7 @@ img {
 .container {
   display: block;
   width: 100%;
-  max-width: 1220px;
+  max-width: 1230px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -325,14 +325,13 @@ img {
 }
 
 .section__subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 
   color: #fb9902;
   font-family: 'Montserrat', sans-serif;
   font-size: 25px;
   line-height: 1.1;
   font-weight: 700;
-  text-align: center;
 }
 
 
@@ -359,7 +358,7 @@ img {
 }
 
 .about__text p {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .about__button:not(:last-child) {
@@ -1682,7 +1681,7 @@ img {
   
   /* Container */
   .container {
-    max-width: 960px;
+    max-width: 780px;
   }
 
   /* Navigation */
@@ -1740,16 +1739,20 @@ img {
 
   /* About */
   .about {
-    margin-bottom: 80px;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .about__info {
-    width: 80%;
-    padding: 30px 50px;
+    width: 90%;
+    padding: 40px 60px 0 0;
+    order: 2;
   }
-
-  .about__slogan {
-    margin-bottom: 20px;
+  
+  .about__image-wrapper {
+    width: 90%;
+    margin: 0;
+    order: 1;
   }
 
   /* Advantages */
@@ -1801,13 +1804,6 @@ img {
 
 
 @media (max-width: 849px) {
-  /* .about {
-    margin-bottom: 170px;
-  }
-
-  .about__info {
-    margin-bottom: -20%;
-  } */
 
   /* Services */
   .services__list {
@@ -1848,7 +1844,7 @@ img {
 
   /* Container */
   .container {
-    max-width: 740px;
+    max-width: 640px;
     padding: 0 20px;
   }
 
@@ -1868,9 +1864,9 @@ img {
     padding-right: 10px;
   }
 
-  .hero__slogan {
+  /* .hero__slogan {
     font-size: 30px;
-  }
+  } */
 
   .hero__text {
     font-size: 14px;
@@ -1894,18 +1890,9 @@ img {
     font-size: 14px;
   }
 
-  /* About */
-  .about {
-    margin-bottom: 300px;
-  }
-  
+  /* About */ 
   .about__info {
-    margin-bottom: -40%;
-    padding: 20px 40px;
-  }
-
-  .about__slogan {
-    font-size: 23px;
+    padding: 40px 0 0;
   }
 
   /* Advantages */
@@ -1985,12 +1972,16 @@ img {
 
  /* Container */
   .container {
-    max-width: 590px;
+    max-width: 480px;
   }
 
   /* Hero */
   .hero__inner {
     width: 80%;
+  }
+
+  .hero__slogan {
+    font-size: 30px;
   }
 
   /* About */
@@ -2054,7 +2045,7 @@ img {
   
   /* Container */
   .container {
-    max-width: 450px;
+    max-width: none;
   }
 
   /* Section */
@@ -2065,6 +2056,16 @@ img {
   .section__subtitle {
     font-size: 20px;
   }
+
+  /* About */
+  .about__button:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .about__button {
+    display: block;
+  }
+
 
   /* Advantages */
   .advantages {
