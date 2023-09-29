@@ -61,13 +61,17 @@ img {
 }
 
 
-/* Container */
+/* Containers */
 .container {
   display: block;
   width: 100%;
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.container-right {
+	padding-left: calc((100% - 1230px) / 2 + 30px);
 }
 
 
@@ -364,8 +368,7 @@ img {
 .about__image-wrapper {
   position: relative;
   width: 50%;
-  margin-left: auto;
-  margin-right: -50px;
+  margin-left: 30px;
 }
 
 .about__image-wrapper::after {
@@ -768,6 +771,7 @@ img {
 }
 
 .team__image {
+  width: 100%;
   background-color: #0d0f11;
 }
 
@@ -1586,11 +1590,26 @@ img {
 
 @media (max-width: 1199px) {
   
+  /* Containers */
+  .container-right {
+    padding-left: 30px;
+  }
+
   /* Advantage */
   .advantage {
     width: 400px;
     max-width: none;
   }
+
+  /* Team */
+  .team__list {
+    margin: 0 -10px 40px;
+  }
+
+  .team__item {
+    padding: 0 10px;
+  }
+
 }
 
 
@@ -1684,16 +1703,17 @@ img {
   .about {
     flex-direction: column;
     justify-content: flex-end;
+    padding-right: 30px;
   }
 
   .about__info {
-    width: 90%;
+    width: 70%;
     padding: 40px 60px 0 0;
     order: 2;
   }
   
   .about__image-wrapper {
-    width: 90%;
+    width: 70%;
     margin: 0;
     order: 1;
   }
@@ -1735,6 +1755,16 @@ img {
 
   .promo__title {
     font-size: 28px;
+  }
+
+  /* Team */
+  .team__list {
+    flex-wrap: wrap;
+  }
+
+  .team__item {
+    width: 50%;
+    margin-bottom: 20px;
   }
 
   /* Reviews */
@@ -1840,7 +1870,12 @@ img {
 
   /* About */ 
   .about__info {
+    width: 80%;
     padding: 40px 0 0;
+  }
+
+  .about__image-wrapper {
+    width: 90%;
   }
 
   /* Advantages */
@@ -1924,6 +1959,8 @@ img {
   .section__suptitle {
     margin-top: -25px;
     margin-bottom: 20px;
+    padding: 0 30px;
+      
   }
 
   /* Advantages */
@@ -1945,6 +1982,11 @@ img {
   /* Photos */
   .photos__item {
     width: 100%;
+  }
+
+  /* Team */
+  .team__item {
+    width: 90%;
   }
 
   /* Promo */
@@ -1972,6 +2014,8 @@ img {
 
   
 }
+
+
 
 @media (max-width: 479px) {
   
