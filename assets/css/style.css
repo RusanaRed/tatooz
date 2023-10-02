@@ -701,7 +701,7 @@ img {
   top: 0;
   z-index: 1;
 
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .promo__content {
@@ -1143,21 +1143,21 @@ img {
 .articles__list {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px 40px;
+  gap: 30px;
+  margin-bottom: 40px;
 }
 
 .articles__item {
   display: flex;
   flex-direction: column;
 
-  width: 25%;
-  margin: 0 15px;
+  width: 24%;
 
   background-color: #131619;
 }
 
 .articles__image {
-  max-width: 262px;
+  width: 100%;
   max-height: 160px;
   object-fit: cover;
 }
@@ -1173,13 +1173,13 @@ img {
 .articles__content::before {
   content: "";
   position: absolute;
-  top: -33px;
-  right: 1px;
-  left: 1px;
+  top: -35px;
+  right: 0px;
+  left: 0px;
   z-index: 2;
 
-  width: 262px;
-  height: 34px;
+  width: 100%;
+  height: 36px;
 
   background: url("../images/blog/blog-element.svg") no-repeat;
   background-size: cover;
@@ -1304,7 +1304,6 @@ img {
 }
 
 .articles__button {
-  
   text-align: center;
 }
 
@@ -1643,33 +1642,17 @@ img {
   .faq__image-wrapper {
     display: none;
   }
+
+  /* Articles */
+  .articles__list {
+    /* flex-wrap: wrap; */
+    /* row-gap: 30px; */
+  }
+
+  .articles__item {
+    /* width: 46%; */
+  }
 }
-
-
-/* @media (max-width: 1099px) { */
-  
-  /* About */
-  /* .about {
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-
-  .about__info {
-    position: absolute;
-    z-index: 2;
-
-    width: 70%;
-    margin-bottom: -70px;
-    padding: 40px 50px 30px;
-
-    background-color: #191b1e;
-  }
-
-  .about__image-wrapper {
-    width: 115%;
-    margin: 0;
-  } */
-/* } */
 
 
 @media (max-width: 999px) {
@@ -1779,7 +1762,7 @@ img {
 
   /* Promo */
   .promo {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 
   .promo__content {
@@ -1815,6 +1798,24 @@ img {
     width: 85%;
   }
 
+  /* Articles */
+  .articles__list {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .articles__item {
+    width: 48%;
+  }
+
+  .articles__image {
+    max-height: 200px;
+  }
+
+  .articles__content::before {
+    top: -64px;
+    height: 65px;
+  }
 }
 
 
@@ -1863,6 +1864,7 @@ img {
   .consultation-form {
     width: 70%;
   }
+
 }
 
 
@@ -1985,6 +1987,10 @@ img {
     background-position: right 37% center;
   }
 
+  /* Articles */
+  .articles__list {
+    gap: 20px;
+  }
 }
 
 
@@ -2090,6 +2096,16 @@ img {
   /* Form */
   .form {
     margin: 0 auto;
+  }
+
+  /* Articles */
+  .articles__list {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .articles__item {
+    width: 90%;
   }
 }
 
