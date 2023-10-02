@@ -95,7 +95,7 @@ img {
   text-align: center;
   letter-spacing: 0.3px;
 
-  transition: color 0.2s, background-color 0.2s ease-out;
+  transition: color 0.3s linear, background-color 0.3s linear, outline 0.2s linear;
 }
 
 .button:hover {
@@ -118,6 +118,11 @@ img {
   border: 1px solid #fb9902;
 
   color: #ffffff;
+}
+
+.button--secondary:hover {
+  background-color: transparent;
+  outline: 1px solid #fb9902;
 }
 
 .button--small {
