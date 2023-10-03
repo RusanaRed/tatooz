@@ -186,6 +186,8 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+
+  transition: color 0.2s linear;
 }
 
 .navigation__link.active {
