@@ -95,7 +95,7 @@ img {
   text-align: center;
   letter-spacing: 0.3px;
 
-  transition: color 0.3s linear, background-color 0.3s linear, outline 0.2s linear;
+  transition: color 0.3s linear, background 0.3s linear, outline 0.2s linear;
 }
 
 .button:hover {
@@ -142,6 +142,13 @@ img {
   right: 0;
   z-index: 4;
   width: 100%;
+
+  transition: background 0.3s linear;
+}
+
+.header--dark {
+  background-color: #0d0f11;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -153,6 +160,10 @@ img {
   height: 80px;
 
   border-bottom: 1px solid #fb9902;
+}
+
+.navigation--no-border {
+  border: none;
 }
 
 .navigation__wrapper {
