@@ -933,83 +933,89 @@
   <!-- Modals -->
   <div class="modal" id="getСonsultationModal">
     <div class="modal__inner">
-      <div class="modal__content">
-        <div class="modal__header">
-          <h4 class="modal__title">Остались вопросы?</h4>
-          <div class="modal__text">
-            <p>Оставьте свои контакты и мы с вами свяжемся!</p>
+      <div class="modal__frame">
+        <div class="modal__content">
+          <div class="modal__header">
+            <h4 class="modal__title">Остались вопросы?</h4>
+            <div class="modal__text">
+              <p>Оставьте свои контакты и мы с вами свяжемся!</p>
+            </div>
           </div>
-        </div>
 
-        <form class="form" action="/" method="post">
-          <div class="form__group">
-            <input class="input input--user" type="text" placeholder="Имя" id="consultation-form-name" name="consultation-form-name" required>
-            <input class="input input--phone" type="tel" placeholder="Телефон" id="consultation-form-phone" name="consultation-form-phone" required>
-          </div>
-          <button class="button button--primary" type="submit">Получить консультацию</button>
-        </form>
-      </div>
+          <form class="form" action="/" method="post">
+            <div class="form__group">
+              <input class="input input--user" type="text" placeholder="Имя" id="consultation-form-name" name="consultation-form-name" required>
+              <input class="input input--phone" type="tel" placeholder="Телефон" id="consultation-form-phone" name="consultation-form-phone" required>
+            </div>
+            <button class="button button--primary" type="submit">Получить консультацию</button>
+          </form>
+        </div><!-- /.modal__content -->
 
-      <button class="modal__close" type="button" data-modal-close>
-        <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
-      </button>
+        <button class="modal__close" type="button" data-modal-close>
+          <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
+        </button>
+      </div><!-- /.modal__frame -->
     </div><!-- /.modal__inner -->
   </div><!-- /.modal -->
 
 
   <div class="modal" id="thanksModal">
     <div class="modal__inner">
-      <div class="modal__content">
-        <div class="modal__header">
-          <h4 class="modal__title">Спасибо!</h4>
-          <div class="modal__text">
-            <p>Наш администратор скоро вам позвонит</p>
+      <div class="modal__frame">
+        <div class="modal__content">
+          <div class="modal__header">
+            <h4 class="modal__title">Спасибо!</h4>
+            <div class="modal__text">
+              <p>Наш администратор скоро вам позвонит</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <button class="modal__close" type="button" data-modal-close>
-        <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
-      </button>
+        <button class="modal__close" type="button" data-modal-close>
+          <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
+        </button>
+      </div><!-- /.modal__frame -->
     </div><!-- /.modal__inner -->
   </div><!-- /.modal -->
 
 
   <div class="modal" id="makeAppointmentModal">
     <div class="modal__inner">
-      <div class="modal__content modal__content--big">
-        <div class="modal__header">
-          <h4 class="modal__title">Запись на прием</h4>
-        </div>
+      <div class="modal__frame">
+        <div class="modal__content modal__content--big">
+          <div class="modal__header">
+            <h4 class="modal__title">Запись на прием</h4>
+          </div>
 
-        <form class="form form--appointment" action="/" method="post">
-          <div class="form__group">
-            <input class="input input--user" type="text" placeholder="Имя *" id="appointment-form-name" name="appointment-form-name" required>
-            <input class="input input--phone" type="tel" placeholder="Телефон *" id="appointment-form-phone" name="appointment-form-phone" required>
-            <input class="input input--email" type="email" placeholder="E-mail" id="appointment-form-email" name="appointment-form-email">
-            <textarea class="input input--textarea" placeholder="Сообщение *" id="appointment-form-text" name="appointment-form-text" required></textarea>
-          </div>
-          <div class="form__group">
-            <label class="form__title input-file">
-              <input class="visually-hidden input" type="file" id="appointment-form-file" name="appointment-form-file">
-              <span class="input-file__button button button--secondary">Прикрепить файл</span>           
-              <span class="input-file__text">Максимум 10мб</span>
-            </label>
-          </div>
-          <div class="form__group">
-            <label class="form__title">
-              <input class="visually-hidden form__control" type="checkbox" name="appointment-form-terms" required>
-              <span class="form__mark"></span>
-              <span class="form__label">Даю согласие на <a class="form__link" href="#!">обработку персональных данных</a></span>
-            </label>
-          </div>
-          <button class="form__button button button--primary" type="submit">Отправить</button>
-        </form>
-      </div>
+          <form class="form form--appointment" action="/" method="post">
+            <div class="form__group">
+              <input class="input input--user" type="text" placeholder="Имя *" id="appointment-form-name" name="appointment-form-name" required>
+              <input class="input input--phone" type="tel" placeholder="Телефон *" id="appointment-form-phone" name="appointment-form-phone" required>
+              <input class="input input--email" type="email" placeholder="E-mail" id="appointment-form-email" name="appointment-form-email">
+              <textarea class="input input--textarea" placeholder="Сообщение *" id="appointment-form-text" name="appointment-form-text" required></textarea>
+            </div>
+            <div class="form__group">
+              <label class="form__title input-file">
+                <input class="visually-hidden input" type="file" id="appointment-form-file" name="appointment-form-file">
+                <span class="input-file__button button button--secondary">Прикрепить файл</span>           
+                <span class="input-file__text">Максимум 10мб</span>
+              </label>
+            </div>
+            <div class="form__group">
+              <label class="form__title">
+                <input class="visually-hidden form__control" type="checkbox" name="appointment-form-terms" required>
+                <span class="form__mark"></span>
+                <span class="form__label">Даю согласие на <a class="form__link" href="#!">обработку персональных данных</a></span>
+              </label>
+            </div>
+            <button class="form__button button button--primary" type="submit">Отправить</button>
+          </form>
+        </div><!-- /.modal__content -->
 
-      <button class="modal__close" type="button" data-modal-close>
-        <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
-      </button>
+        <button class="modal__close" type="button" data-modal-close>
+          <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
+        </button>
+      </div><!-- /.modal__frame -->
     </div><!-- /.modal__inner -->
   </div><!-- /.modal -->
 
