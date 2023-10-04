@@ -46,6 +46,7 @@ $(function() {
 
   /* ScrollSpy
   ================================================*/
+
   let windowH = $(window).height();
   scrollSpy(scrollTop);
 
@@ -73,5 +74,17 @@ $(function() {
       }
     });
   };
+
+
+  /* Selected file name for input-file
+  ================================================*/
   
+  $('.input-file input[type=file]').on('change', function(){
+    let file = this.files[0];
+    $(this).closest('.input-file').find('.input-file__text').html(file.name);
+  });
+
+
+
+
 });

@@ -1124,16 +1124,85 @@ img {
   width: 300px;
 }
 
-.form__group {
-  margin-bottom: 30px;
+.form--appointment {
+  width: 400px;
 }
 
+.form__group {
+  margin-bottom: 25px;
+}
+
+.form__title {
+  position: relative;
+}
+
+.form__control:checked + .form__mark {
+  border-color: #fb9902;
+}
+
+.form__control:checked + .form__mark::after {
+  position: absolute;
+  content: "";
+  top: 1px;
+  bottom: 0;
+  left: 1px;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background: url("../images/icons/tick.svg") no-repeat center;
+}
+
+.form__control:focus-visible + .form__mark,
+.form__control:active + .form__mark {
+  box-shadow: 0 0 3px 1px #3898ec;
+}
+
+/* .form__control:disabled + .form__mark {
+  background-color: #e1e0e0;
+  border-color: #d4d3d3;
+}
+
+.form__control:disabled + .form__mark:hover {
+  border-color: #d4d3d3;
+} */
+
+.form__mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.form__mark:hover {
+  border-color: #fb9902;
+}
+
+.form__label {
+  padding-left: 25px;
+}
+
+.form__link {
+  color: #fb9902;
+  text-decoration: none;
+}
+
+.form__link:hover {
+  text-decoration: underline;
+}
+
+
+/* Input */
 .input {
   display: block;
   width: 100%;
   height: 40px;
   margin-bottom: 15px;
-  padding: 0 15px;
+  padding: 15px;
 
   background: transparent;
   border: 1px solid #ffffff;
@@ -1154,6 +1223,30 @@ img {
 .input:focus {
   outline: none;
   border-color: #fb9902;
+}
+
+.input--textarea {
+  min-height: 150px;
+  /* resize: none; */
+}
+
+
+/* Input-file */
+.input-file {
+  position: relative;
+	display: inline-block;
+}
+
+.input-file__button {
+	padding: 6px 20px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.input-file__text {
+  padding: 0 10px;
+  line-height: 36px;
+	display: inline-block;
 }
 
 
@@ -1527,7 +1620,7 @@ img {
   left: 0;
   z-index: 5;
 
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1556,6 +1649,11 @@ img {
   background-repeat: no-repeat;
   background-position: left -350px top -40px;
   border: 1px solid #fff;
+}
+
+.modal__content--big {
+  padding: 70px 70px 60px;
+  background-position: left -300px center;
 }
 
 .modal__header {
