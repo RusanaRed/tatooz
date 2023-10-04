@@ -1,8 +1,8 @@
 $(function() {
   
-  let hero = $("#hero");
-  let header = $("#header");
-  let navigation = $("#navigation");
+  let hero = $('#hero');
+  let header = $('#header');
+  let navigation = $('#navigation');
 
   let headerH = header.innerHeight();
   let scrollTop = $(window).scrollTop();
@@ -12,7 +12,7 @@ $(function() {
 
   headerScroll()
 
-  $(window).on("scroll resize", function() {
+  $(window).on('scroll resize', function() {
     headerScroll();
   });
 
@@ -21,24 +21,24 @@ $(function() {
     let scrollTop = $(this).scrollTop();
 
     if (scrollTop >= heroH) {
-      header.addClass("header--dark");
-      navigation.addClass("navigation--no-border");
+      header.addClass('header--dark');
+      navigation.addClass('navigation--no-border');
     } else {
-      header.removeClass("header--dark");
-      navigation.removeClass("navigation--no-border");
+      header.removeClass('header--dark');
+      navigation.removeClass('navigation--no-border');
     }
   };
 
   /* Smooth scroll to sections
   ================================================*/
 
-  $("[data-scroll]").on("click", function(event) {
+  $('[data-scroll]').on('click', function(event) {
     event.preventDefault();
 
-    let scrollElement = $(this).data("scroll");
+    let scrollElement = $(this).data('scroll');
     let scrollElementPosition = $(scrollElement).offset().top;
 
-    $("html, body").animate({
+    $('html, body').animate({
       scrollTop: scrollElementPosition - headerH
     }, 500)
   });
@@ -50,27 +50,27 @@ $(function() {
   let windowH = $(window).height();
   scrollSpy(scrollTop);
 
-  $(window).on("scroll", function() {
+  $(window).on('scroll', function() {
     scrollTop = $(this).scrollTop();
     
     scrollSpy(scrollTop);
   });
 
   function scrollSpy (scrollTop) {
-    $("[data-scrollspy]").each(function() {
+    $('[data-scrollspy]').each(function() {
       
       let $this = $(this);
-      let sectionId = $this.data("scrollspy");
+      let sectionId = $this.data('scrollspy');
       let sectionOffset = $this.offset().top;
       sectionOffset = sectionOffset - (windowH / 3);
 
       if (scrollTop >= sectionOffset) {
-        $('#navigation [data-scroll]').removeClass("active");
-        $('#navigation [data-scroll="' + sectionId + '"]').addClass("active");
+        $('#navigation [data-scroll]').removeClass('active');
+        $('#navigation [data-scroll="' + sectionId + '"]').addClass('active');
       }
 
       if (scrollTop == 0) {
-        $('#navigation [data-scroll]').removeClass("active");
+        $('#navigation [data-scroll]').removeClass('active');
       }
     });
   };
@@ -78,13 +78,32 @@ $(function() {
 
   /* Selected file name for input-file
   ================================================*/
-  
+
   $('.input-file input[type=file]').on('change', function(){
     let file = this.files[0];
     $(this).closest('.input-file').find('.input-file__text').html(file.name);
   });
 
 
+  /* Modal
+  ================================================*/
 
+  $('[data-modal]').on('click', function(event) {
+    event.preventDefault();
+
+    let modal = $(this).data('modal');
+
+    $('body').addClass('no-scroll');
+    $(modal).addClass('show');
+  })
+
+  $('[data-modal-close]').on('click', function(event) {
+    event.preventDefault();
+
+    let modal = $(this).parents('.modal');
+
+    $('body').removeClass('no-scroll');
+    modal.removeClass('show');
+  })
 
 });

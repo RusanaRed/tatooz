@@ -1698,6 +1698,10 @@ img {
   transform: rotate(90deg);
 }
 
+.modal__close:focus {
+  outline: none;
+}
+
 .modal__close img {
   display: block;
 }
