@@ -2002,6 +2002,21 @@ img {
   .footer__col--second {
     order: 2;
   }
+
+  /* Modal */
+  .modal__frame {
+    width: auto;
+    max-width: none;
+  }
+  
+  .modal__content {
+    padding: 50px;
+    background-image: none;
+  }
+
+  .modal__content--big {
+    padding: 50px;
+  }
 }
 
 
@@ -2182,6 +2197,15 @@ img {
     background-position: right 37% center;
   }
 
+  /* Form */
+  .form--appointment {
+    max-width: 300px;
+  }
+
+  .form__group {
+    margin-bottom: 15px;
+  }
+
   /* Articles */
   .articles__list {
     gap: 20px;
@@ -2206,6 +2230,28 @@ img {
 
   /* Footer */
   .footer__item {
+    font-size: 14px;
+  }
+
+  /* Modal */
+  .modal__frame {
+    padding: 15px;
+  }
+
+  .modal__content {
+    padding: 30px;
+    background-image: none;
+  }
+
+  .modal__content--big {
+    padding: 40px;
+  }
+
+  .modal__title {
+    font-size: 25px;
+  }
+
+  .modal__text {
     font-size: 14px;
   }
 }
@@ -2308,11 +2354,6 @@ img {
     width: 100%;
     padding-left: 0;
     text-align: center;
-  }
-
-  /* Form */
-  .form {
-    margin: 0 auto;
   }
 
   /* Articles */
