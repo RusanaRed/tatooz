@@ -1651,6 +1651,10 @@ img {
   padding: 25px;
 
   background-color: #0d0f11;
+  opacity: 0;
+
+  transform: translateY(-100px);
+  transition: transform 0.2s ease-out, opacity 0.2s ease-out;
 }
 
 .modal__content {

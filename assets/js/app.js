@@ -95,15 +95,40 @@ $(function() {
 
     $('body').addClass('no-scroll');
     $(modal).addClass('show');
-  })
+
+    setTimeout(function() {
+      $(modal).find('.modal__frame').css({
+        transform: 'translateY(0)',
+        opacity: '1'
+      });
+    }, 200);
+  });
 
   $('[data-modal-close]').on('click', function(event) {
     event.preventDefault();
-
     let modal = $(this).parents('.modal');
+    modalClose(modal)
+  });
 
-    $('body').removeClass('no-scroll');
-    modal.removeClass('show');
+  $('.modal').on('click', function() {
+    let modal = $(this);
+    modalClose(modal)
+  });
+
+  $('.modal__frame').on('click', function(event) {
+    event.stopPropagation();
   })
+
+  function modalClose(modal) {
+    modal.find('.modal__frame').css({
+      transform: 'translateY(-100px)',
+      opacity: '0'
+    });
+
+    setTimeout(function() {
+      $('body').removeClass('no-scroll');
+      modal.removeClass('show');
+    }, 200);
+  }
 
 });
