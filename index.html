@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Tatooz</title>
 </head>
 <body>
@@ -61,6 +62,19 @@
 
     <!-- Hero -->
     <div class="hero" id="hero">
+      
+      <div class="hero__slider" id="heroSlider">
+        <div class="hero__slider-item">
+          <img class="hero__slider-photo" src="assets/images/hero-bg-1.jpg" alt="">
+        </div>
+        <div class="hero__slider-item">
+          <img class="hero__slider-photo" src="assets/images/hero-bg-2.jpg" alt="">
+        </div>
+        <div class="hero__slider-item">
+          <img class="hero__slider-photo" src="assets/images/hero-bg-2.jpg" alt="">
+        </div>
+      </div>
+
       <div class="container">
         <div class="hero__inner">
           <h1 class="visually-hidden">Студия татуировки Tattooz.</h1>
@@ -572,13 +586,35 @@
       <div class="container">
         <div class="reviews">
           <h2 class="visually-hidden">Отзывы</h2>
-          <ul class="reviews__list">
+          <ul class="reviews__list" id="reviewsSlider">
             <li class="reviews__item">
-              <div class="reviews__image-wrapper">
-                <img class="reviews__image" src="assets/images/reviews/review-1.jpg" width="180" height="180" alt="Черно-белое фото девушки.">
+              <div class="reviews__content">
+                <div class="reviews__image-wrapper">
+                  <img class="reviews__image" src="assets/images/reviews/review-1.jpg" width="180" height="180" alt="Черно-белое фото девушки.">
+                </div>
+                <div class="reviews__name">Елена</div>
+                <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
               </div>
-              <div class="reviews__name">Елена</div>
-              <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
+            </li>
+
+            <li class="reviews__item">
+              <div class="reviews__content">
+                <div class="reviews__image-wrapper">
+                  <img class="reviews__image" src="assets/images/reviews/review-2.jpg" width="180" height="180" alt="Черно-белое фото молодого человека.">
+                </div>
+                <div class="reviews__name">Александр</div>
+                <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
+              </div>
+            </li>
+
+            <li class="reviews__item">
+              <div class="reviews__content">
+                <div class="reviews__image-wrapper">
+                  <img class="reviews__image" src="assets/images/reviews/review-3.jpg" width="180" height="180" alt="Черно-белое фото мужчины.">
+                </div>
+                <div class="reviews__name">Филипп</div>
+                <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
+              </div>
             </li>
           </ul>
         </div><!-- /.reviews -->
@@ -1022,6 +1058,7 @@
 
   <!-- Javascript -->
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
   <script src="assets/js/app.js"></script>
 
 

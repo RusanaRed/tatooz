@@ -131,4 +131,38 @@ $(function() {
     }, 200);
   }
 
+
+  /* Slick slider https://kenwheeler.github.io/slick/
+  ================================================*/
+
+  /* Hero Slider */
+
+  $('#heroSlider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 500
+  });
+
+  /* Reviews Slider */
+
+  let reviewsSlider = $('#reviewsSlider');
+
+  reviewsSlider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 500
+  });
+
+
+
 });
