@@ -1,4 +1,27 @@
 $(function() {
+
+  /* Navigation Toggle on mobile
+  ================================================*/
+
+  let navigationToggle = $('#navigationToggle');
+  let userNavigation = $('#userNavigation');
+
+  navigationToggle.on('click', function(event) {
+    event.preventDefault();
+
+    $('body').toggleClass('nav-show');
+    $(this).toggleClass('active');
+    userNavigation.toggleClass('show');
+
+  });
+
+  $(window).on('resize', function() {
+    $('body').removeClass('nav-show');
+    navigationToggle.removeClass('active');
+    userNavigation.removeClass('show');
+  });
+
+
   
   let hero = $('#hero');
   let header = $('#header');
@@ -37,6 +60,10 @@ $(function() {
 
     let scrollElement = $(this).data('scroll');
     let scrollElementPosition = $(scrollElement).offset().top;
+
+    $('body').removeClass('nav-show');
+    navigationToggle.removeClass('active');
+    userNavigation.removeClass('show');
 
     $('html, body').animate({
       scrollTop: scrollElementPosition - headerH
@@ -150,19 +177,15 @@ $(function() {
 
   /* Reviews Slider */
 
-  let reviewsSlider = $('#reviewsSlider');
-
-  reviewsSlider.slick({
+  $('#reviewsSlider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     speed: 500
   });
-
-
 
 });

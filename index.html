@@ -17,8 +17,9 @@
         <a class="logo" href="#" data-scroll="#hero">
           <img src="assets/images/logo.png" width="190" height="38" alt="Логотип студии Tatooz.">
         </a>
+        
         <div class="navigation__wrapper">
-          <ul class="navigation__list">
+          <ul class="navigation__list" id="userNavigation">
             <li class="navigation__item">
               <a class="navigation__link" href="#" data-scroll="#about">О нас</a>
             </li>
@@ -44,10 +45,12 @@
               <a class="navigation__link" href="#" data-scroll="#contacts">Контакты</a>
             </li>
           </ul>
-          <button class="burger" type="button">
-            <svg class="burger-icon" width="50" height="30" viewBox="0 0 50 30" aria-hidden="true" focusable="false">
-              <use href="assets/images/sprite.svg#burger-icon"/>
-            </svg>
+          
+          <button class="burger" type="button" id="navigationToggle">
+            <span class="burger__line">1</span>
+            <span class="burger__line">2</span>
+            <span class="burger__line">3</span>
+            <span class="burger__line">4</span>
           </button>
           <!-- <address>
             <a class="phone" href="tel:82345556789">8 (234) 555-67-89</a>
