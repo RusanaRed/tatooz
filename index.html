@@ -5,1065 +5,1072 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/aos.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Tatooz</title>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header" id="header">
-    <container class="container">
-      <nav class="navigation" id="navigation">
-        <a class="logo" href="#" data-scroll="#hero">
-          <img src="assets/images/logo.png" width="190" height="38" alt="Логотип студии Tatooz.">
-        </a>
-        
-        <div class="navigation__wrapper">
-          <ul class="navigation__list" id="userNavigation">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#" data-scroll="#about">О нас</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#" data-scroll="#gallery">Галерея</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#" data-scroll="#services">Услуги</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#" data-scroll="#team">Мастера</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#" data-scroll="#reviews">Отзывы</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#" data-scroll="#faq">FAQ</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#" data-scroll="#articles">Статьи</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#" data-scroll="#contacts">Контакты</a>
-            </li>
-          </ul>
-          
-          <button class="burger" type="button" id="navigationToggle">
-            <span class="burger__line">1</span>
-            <span class="burger__line">2</span>
-            <span class="burger__line">3</span>
-            <span class="burger__line">4</span>
-          </button>
-          <!-- <address>
-            <a class="phone" href="tel:82345556789">8 (234) 555-67-89</a>
-          </address> -->
-        </div>
-      </nav>
-    </container>
-  </header>
-
-  <!-- Main -->
-  <main>
-
-    <!-- Hero -->
-    <div class="hero" id="hero">
-      
-      <div class="hero__slider" id="heroSlider">
-        <div class="hero__slider-item">
-          <img class="hero__slider-photo" src="assets/images/hero-bg-1.jpg" alt="">
-        </div>
-        <div class="hero__slider-item">
-          <img class="hero__slider-photo" src="assets/images/hero-bg-2.jpg" alt="">
-        </div>
-        <div class="hero__slider-item">
-          <img class="hero__slider-photo" src="assets/images/hero-bg-2.jpg" alt="">
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="hero__inner">
-          <h1 class="visually-hidden">Студия татуировки Tattooz.</h1>
-          <div class="hero__slogan">We Provide Forever.</div>
-          <div class="hero__text">
-            <p>12 лет делаем художественные татуировки в СПб. Стерильность и безопасность &#8212; наше главное правило. Мастера студии &#8212; художники с большим опытом в татуировании. Для нас не бывает неинтересных проектов.</p>
-          </div>
-          <button class="hero__button button button--primary" type="button" data-modal="#makeAppointmentModal">Записаться</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- About -->
-    <section class="section" id="about" data-scrollspy="#about">
-      <div class="container">
-        <h2 class="section__title">О студии</h2>
-        <p class="section__suptitle">Уже 12 лет мы, не покладая тату-машинок, игл для пирсинга, лазеров для удаления и планшетов для рисования, делаем людей счастливее, красивее и увереннее в себе</p>
-      </div>
-      <div class="container-right">
-        <div class="about">
-          <div class="about__info">
-            <h3 class="section__subtitle">Стабильное качество &#8212; это практика</h3>
-            <div class="about__text">
-              <p>Чтобы быть гуру в таком ремесле, где тесно сочетаются творческий процесс и медицинская процедура, необходимо сохранять «свежий» взгляд и одновременно постоянно совершенствуя свои навыки. Залог успеха &#8212; это постоянная практика, творческие вызовы и компания единомышленников.</p>
-              <p> Можно долго перечислять, чем мы можем быть полезны в вопросах татуировки и пирсинга, но проще сказать, что мы действительно можем всё! И да, мы этим гордимся. Как и качеством наших работ, стерильностью салонов, современностью инструментов и подхода к работе. А ещё &#8212; нашей командой.</p>
-              <p>Записывайся на консультации, приходи в гости, взгляни своими глазами новую историю татуировки, которую создаем мы, TATTOOZ.</p>
-            </div>
-            <a class="about__button button button--primary" href="#" data-modal="#makeAppointmentModal">Записаться</a>
-            <a class="about__button button button--secondary" href="#" data-modal="#getСonsultationModal">Консультация</a>
-          </div>
-
-          <div class="about__image-wrapper">
-            <img src="assets/images/about-image.jpg" width="1334" height="1001" alt="Изображение того, как мастер сосредоточенно делает тату на руке клиента.">
-          </div>
-        </div><!-- /.about -->
-      </div><!-- /.container -->
-    </section>
-
-    <!-- Advantages -->
-    <section class="section section--light">
-      <div class="container">
-        <h2 class="section__title">Почему стоит обратиться именно к нам?</h2>
-        <ul class="advantages">        
-          <li class="advantages__item">
-            <div class="advantage">
-              <span class="advantage__image advantage__image--supplies"></span>
-              <div class="advantage__description">
-                <p class="advantage__title">Оборудование</p>
-                <p class="advantage__text">Качественные инструменты и расходные материалы</p>
-              </div>
-            </div>
-          </li>
-
-          <li class="advantages__item">
-            <div class="advantage">
-              <span class="advantage__image advantage__image--tattoo-table"></span>
-              <div class="advantage__description">
-                <p class="advantage__title">Стерильность</p>
-                <p class="advantage__text">Соответствие санитарным нормам</p>
-              </div>
-            </div>
-          </li>
-
-          <li class="advantages__item">
-            <div class="advantage">
-              <span class="advantage__image advantage__image--hands"></span>
-              <div class="advantage__description">
-                <p class="advantage__title">Выбор</p>
-                <p class="advantage__text">Работа в всех популярных стилях татуировки</p>
-              </div>
-            </div>
-          </li>
-
-          <li class="advantages__item">
-            <div class="advantage">
-              <span class="advantage__image advantage__image--sketching"></span>
-              <div class="advantage__description">
-                <p class="advantage__title">Индивидуальный подход</p>
-                <p class="advantage__text">Разработка эскиза с учетом пожеланий клиента</p>
-              </div>
-            </div>
-          </li>
-
-          <li class="advantages__item">
-            <div class="advantage">
-              <span class="advantage__image advantage__image--catalogue"></span>
-              <div class="advantage__description">
-                <p class="advantage__title">Тату в день обращения</p>
-                <p class="advantage__text">Свободные эскизы по выгодной стоимости</p>
-              </div>
-            </div>
-          </li>
-        </ul><!-- /.advantages -->
-      </div><!-- /.container -->
-    </section>
-
-    <!-- Gallery -->
-    <section class="section" id="gallery" data-scrollspy="#gallery">
-      <div class="container">
-        <h2 class="section__title">Наши свежайшие работы</h2>
-        <p class="section__suptitle">Наши мастера могут сделать тату в любом стиле <br>и у каждого в запасе всегда есть горячие эскизы</p>
-
-        <div class="gallery">
-          <form class="gallery__filters-form filters-form" action="index.html" method="get" autocomplete="off">
-            <button class="filters-form__button filters-form__button--active button button--small" id="filter-default">Все</button>
-            <button class="filters-form__button button button--small" id="filter-body">Тату на теле</button>
-            <button class="filters-form__button button button--small" id="filter-hands">Тату на руках</button>
-            <button class="filters-form__button button button--small" id="filter-legs">Тату на ногах</button>
-            <button class="filters-form__button button button--small" id="filter-head">Тату на голове</button>
-          </form>
-
-          <ul class="gallery__photos photos">
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g1.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g2.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g3.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g4.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g5.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g6.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g7.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g8.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g1.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g2.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g3.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-
-            <li class="photos__item">
-              <a class="photos__link" href="#">
-                <div class="photos__info">
-                  <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
-                  <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
-                  <div class="photos__style">Стиль: <span>Реализм</span></div>
-                </div>
-                <img class="photos__image" src="assets/images/gallery/g4.jpg.webp" width="274" height="342" alt="">
-              </a>
-            </li>
-          </ul><!-- /.gallery__photos -->
-
-          <div class="text-center">
-            <a class="gallery__button button button--secondary" href="#">Все работы</a>
-          </div>
-        </div><!-- /.gallery -->
-      </div><!-- /.container -->
-    </section>
-
-    <!-- Services -->
-    <section class="section section--light" id="services" data-scrollspy="#services">
-      <div class="container">
-        <h2 class="section__title">Какие услуги мы предлагаем</h2>
-
-        <div class="services">
-          <ul class="services__list">
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <div class="services__image services__image--tatoo-machine"></div>
-                <h3 class="services__title">Татуировка</h3>
-              </a>
-              <p class="services__description">Вы можете выбрать тату из нашего каталога или предоставить свой эскиз</p>
-              <span class="services__price">от 1000 p.</span>
-            </li>
-            
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <div class="services__image services__image--tattoo-pen"></div>
-                <h3 class="services__title">Разработка <br>индивидуального эскиза</h3>
-              </a>
-              <p class="services__description">Мы создаем уникальные и креативные дизайны, которые соответствуют вашим пожеланиям и стилю жизни</p>
-              <span class="services__price">от 3000 p.</span>
-            </li>
-
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <div class="services__image services__image--piercing"></div>
-                <h3 class="services__title">Пирсинг</h3>
-              </a>
-              <p class="services__description">Мы предлагаем широкий выбор украшений, а наши мастера установят вам пирсы безопасно и комфортно</p>
-              <span class="services__price">от 2000 p.</span>
-            </li>
-
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <div class="services__image services__image--flower"></div>
-                <h3 class="services__title">Корректировка татуировок</h3>
-              </a>
-              <p class="services__description">Подправим цвет или форму вашей старой татуировки, чтобы она выглядела лучше</p>
-              <span class="services__price">от 1000 p.</span>
-            </li>
-
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <div class="services__image services__image--cleaning-brush"></div>
-                <h3 class="services__title">Удаление татуировок</h3>
-              </a>
-              <p class="services__description">С помощью современных технологий удалим татуировки без повреждения кожи и образования шрамов</p>
-              <span class="services__price">от 1000 p.</span>
-            </li>
-
-            <li class="services__item">
-              <a class="services__link" href="#">
-                <div class="services__image services__image--tattoo-master"></div>
-                <h3 class="services__title">Обучение искусству татуировки</h3>
-              </a>
-              <p class="services__description">Если вы мечтаете стать тату-мастером, мы предлагаем курсы, которые помогут вам развить свои навыки</p>
-              <span class="services__price">от 1000 p.</span>
-            </li>
-          </ul><!-- /.services__list -->
-
-          <div class="text-center">
-            <a class="services__button button button--secondary" href="#">Все услуги</a>
-          </div>
-        </div><!-- /.services -->
-      </div><!-- /.container -->
-    </section>
-
-    <!-- Promo -->
-    <div class="promo">
-      <div class="container">
-        <div class="promo__content">
-          <div class="promo__title">Подарочные сертификаты</div>
-          <p class="promo__text">Запоминающийся подарок &#8212; сложная задача, с которой легко справляется подарочный сертификат на тату или пирсинг. Вы имеете возможность подарить близкому человеку творческий подарок, который останется с ним на всю жизнь. За подробной информацией обращайтесь к нашим администраторам.</p>
-          <a class="button button--secondary" href="#">Заказать сертификат</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Team -->
-    <section class="section section--light" id="team" data-scrollspy="#team">
-      <div class="container">
-        <h2 class="section__title">Наши мастера</h2>
-        <p class="section__suptitle">С нами вы в надежных руках!</p>
-
-        <div class="team">
-          <ul class="team__list">
-            <li class="team__item">
-              <a class="team__link" href="#">
-                <img class="team__image" src="assets/images/team/team-1.jpg.webp" width="263" height="405" alt="Фото Алексея Евгеньева.">
-              </a>
-
-              <div class="team__content">
-                <h3 class="team__name">Алексей Евгеньев</h3>
-                <p class="team__description">Стаж более 9 лет</p>
-
-                <ul class="team__social social">
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#instagram-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на инстаграм мастера.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#vk-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на вконтакте мастера.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#pinterest-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на пинтерест мастера.</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li><!-- /.team__item -->
-
-            <li class="team__item">
-              <a class="team__link" href="#">
-                <img class="team__image" src="assets/images/team/team-2.jpg.webp" width="263" height="405" alt="Фото Марии Кацер.">
-              </a>
-
-              <div class="team__content">
-                <h3 class="team__name">Мария Кацер</h3>
-                <p class="team__description">Стаж более 10 лет</p>
-
-                <ul class="team__social social">
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#instagram-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на инстаграм мастера.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#vk-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на вконтакте мастера.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#pinterest-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на пинтерест мастера.</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li><!-- /.team__item -->
-
-            <li class="team__item">
-              <a class="team__link" href="#">
-                <img class="team__image" src="assets/images/team/team-3.jpg.webp" width="263" height="405" alt="Фото Евгения Финского.">
-              </a>
-
-              <div class="team__content">
-                <h3 class="team__name">Евгений Финский</h3>
-                <p class="team__description">Стаж более 12 лет</p>
-
-                <ul class="team__social social">
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#instagram-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на инстаграм мастера.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#vk-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на вконтакте мастера.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#pinterest-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на пинтерест мастера.</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li><!-- /.team__item -->
-
-            <li class="team__item">
-              <a class="team__link" href="#">
-                <img class="team__image" src="assets/images/team/team-4.jpg.webp" width="263" height="405" alt="Фото Дарьи Казанцевой.">
-              </a>
-
-              <div class="team__content">
-                <h3 class="team__name">Дарья Казанцева</h3>
-                <p class="team__description">Стаж более 8 лет</p>
-
-                <ul class="team__social social">
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#instagram-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на инстаграм мастера.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#vk-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на вконтакте мастера.</span>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a class="social__link" href="#" target="_blank">
-                      <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                        <use href="assets/images/sprite.svg#pinterest-icon"/>
-                      </svg>
-                      <span class="visually-hidden">Ссылка на пинтерест мастера.</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li><!-- /.team__item -->
-          </ul><!-- /.team__list -->
-
-          <a class="team__button button button--secondary" href="#">Все мастера</a>
-        </div><!-- /.team -->
-      </div><!-- /.container -->
-    </section>
-
-    <!-- Reviews -->
-    <section class="section" id="reviews" data-scrollspy="#reviews">
-      <div class="container">
-        <div class="reviews">
-          <h2 class="visually-hidden">Отзывы</h2>
-          <ul class="reviews__list" id="reviewsSlider">
-            <li class="reviews__item">
-              <div class="reviews__content">
-                <div class="reviews__image-wrapper">
-                  <img class="reviews__image" src="assets/images/reviews/review-1.jpg" width="180" height="180" alt="Черно-белое фото девушки.">
-                </div>
-                <div class="reviews__name">Елена</div>
-                <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
-              </div>
-            </li>
-
-            <li class="reviews__item">
-              <div class="reviews__content">
-                <div class="reviews__image-wrapper">
-                  <img class="reviews__image" src="assets/images/reviews/review-2.jpg" width="180" height="180" alt="Черно-белое фото молодого человека.">
-                </div>
-                <div class="reviews__name">Александр</div>
-                <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
-              </div>
-            </li>
-
-            <li class="reviews__item">
-              <div class="reviews__content">
-                <div class="reviews__image-wrapper">
-                  <img class="reviews__image" src="assets/images/reviews/review-3.jpg" width="180" height="180" alt="Черно-белое фото мужчины.">
-                </div>
-                <div class="reviews__name">Филипп</div>
-                <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
-              </div>
-            </li>
-          </ul>
-        </div><!-- /.reviews -->
-      </div><!-- /.container -->
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section--light" id="faq" data-scrollspy="#faq">
-      <div class="container">
-        <div class="faq">
-          <div class="faq__wrapper">
-            <h3 class="section__subtitle">Часто задаваемые вопросы</h3>
-
-            <div class="faq__accordion accordion">
-              <div class="accordion__item">
-                <input class="accordion__input" type="checkbox" id="faq_1">
-                <label class="accordion__title" for="faq_1">Какова минимальная цена татуировки?</label>
-                <div class="accordion__text">
-                  <p>Минимальная цена на тату у нас составляет 3000 рублей. Но все зависит от выбранного мастера, стиля, сложности. Напишите или позвоните нам - мы бесплатно проконсультируем вас и подберём идеальную тату</p>
-                </div>
-              </div>
-
-              <div class="accordion__item">
-                <input class="accordion__input" type="checkbox" id="faq_2">
-                <label class="accordion__title" for="faq_2">Сколько нельзя плавать после того, как сделал татуировку?</label>
-                <div class="accordion__text">
-                  <p>Плавать в бассейне и принимать ванны не рекомендуется около 15 дней после тату, а плавать в море, реках и прочих природных водоёмах не рекомендуется около месяца после татуировки. Подробнее читайте в <a href="#">нашей статье</a></p>
-                </div>
-              </div>
-
-              <div class="accordion__item">
-                <input class="accordion__input" type="checkbox" id="faq_3">
-                <label class="accordion__title" for="faq_3">После тату нельзя загорать?</label>
-                <div class="accordion__text">
-                  <p>Да, весьма нежелательно: воздержитесь от солнечных ванн до полного заживления татуировки, а это, как правило, около 1,5 - 2 месяцев. Кроме того, даже после заживления настоятельно рекомендуем пользоваться солнцезащитной косметикой с SPF 50+,т.к. она защитит не только от ожогов кожи, но и от выгорания рисунка, и вы дольше сохраните свою тату в первозданном виде. Почитайте нашу статью о <a href="#">правилах загара после тату</a></p>
-                </div>
-              </div>
-
-              <div class="accordion__item">
-                <input class="accordion__input" type="checkbox" id="faq_4">
-                <label class="accordion__title" for="faq_4">Делаете ли вы тату несовершеннолетним?</label>
-                <div class="accordion__text">
-                  <p>Только с согласия родителей/опекуна с 16 лет. Пирсинг строго после 18, даже если есть согласие родителей.</p>
-                </div>
-              </div>
-
-              <div class="accordion__item">
-                <input class="accordion__input" type="checkbox" id="faq_5">
-                <label class="accordion__title" for="faq_5">Можно ли перекрыть старую татуировку?</label>
-                <div class="accordion__text">
-                  <p>Перекрыть можно всё от мала до велика: мы подберём эскиз и краски так, что от старой тату не останется и следа. А если у вас чёрные контуры или участки, полностью закрашенные в чёрный цвет, предварительно мы можем осветлить тату лазером, тогда поверх можно будет нанести любой новый рисунок.</p>
-                </div>
-              </div>
-
-              <div class="accordion__item">
-                <input class="accordion__input" type="checkbox" id="faq_6">
-                <label class="accordion__title" for="faq_6">Больно ли бить тату? Где больнее всего?</label>
-                <div class="accordion__text">
-                  <p>Боль - понятие субъективное: кому-то больно, кому-то терпимо. Всё зависит от вашего болевого порога + места, на которое наносится рисунок: наиболее чувствительными считаются места, где мало мышечной и жировой ткани, тоньше кожа или много нервных окончаний. Об этом нас тоже часто спрашивают, поэтому читайте подробную статью о том, <a href="#">где больнее бить тату</a></p>
-                </div>
-              </div>
-
-              <div class="accordion__item">
-                <input class="accordion__input" type="checkbox" id="faq_7">
-                <label class="accordion__title" for="faq_7">Алкоголь до и после тату: правда ли, что нельзя?</label>
-                <div class="accordion__text">
-                  <p>Да, и это не блажь. За день-два до нанесения татуировки не рекомендуется пить алкоголь и/или разжижающие кровь вещества, такие, как аспирин, например, потому что это может вызвать обильное кровотечение во время сеанса тату. Ну и, кроме того, решения о таких изменениях лучше принимать на трезвую голову) Ну а после татуировки также стоит воздержаться от алкоголя 3-5 дней, как и после любой другой медицинской процедуры (типа удаления зуба). Алкоголь разжижает кровь, и это может не только увеличить процесс заживления, но и спровоцировать воспаления и заражения. Подробнее читайте в <a href="#">статье</a></p>
-                </div>
-              </div>
-
-              <div class="accordion__item">
-                <input class="accordion__input" type="checkbox" id="faq_8">
-                <label class="accordion__title" for="faq_8">Можно ли удалить татуировку?</label>
-                <div class="accordion__text">
-                  <p>Да. Современное лазерное оборудование позволяет человеку избавиться от чернил под кожей за несколько сеансов. Наша студия оказывает такую услугу, с подробностями, примерами работ и прайсом вы можете ознакомиться <a href="#">здесь</a></p>
-                </div>
-              </div>
-            </div><!-- /.faq__accordion -->
-          </div><!-- /.faq__wrapper -->
-
-          <div class="faq__image-wrapper">
-            <img class="faq__image" src="assets/images/faq-img_1.jpg" width="" height="" alt="Фото бородатого мужчины с татуировкой быка на груди, смотрящего вправо вверх.">
-          </div>
-        </div><!-- /.faq -->
-      </div><!-- /.container -->
-    </section>
-
-    <div class="consultation">
-      <div class="container">
-        <div class="consultation__wrapper">
-          <div class="consultation-form">
-            <div class="consultation-form__header">
-              <h3 class="consultation-form__title">Остались вопросы?</h3>
-              <div class="consultation-form__text">Оставьте свои контакты и мы с вами свяжемся!</div>
-            </div>
-
-            <div class="consultation-form__content">
-              <form class="form" action="/" method="post">
-                <div class="form__group">
-                  <input class="input input--user" type="text" placeholder="Имя">
-                  <input class="input input--phone" type="tel" placeholder="Телефон">
-                </div>
-                <button class="button button--primary" type="submit">Получить консультацию</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div><!-- /.container -->
-    </div><!-- /.consultation -->
-
-    <!-- Articles -->
-    <section class="section" id="articles" data-scrollspy="#articles">
-      <div class="container">
-        <h2 class="section__title">Новые статьи</h2>
-        <p class="section__suptitle">Будьте в курсе с нами!</p>
-
-        <div class="articles">
-          <ul class="articles__list">
-            <li class="articles__item">
-              <img class="articles__image" src="assets/images/blog/blog1.jpg" width="262" height="153" alt="Фото женских рук с забитым рукавом, обнимающих книгу.">
-              <div class="articles__content">
-                <div class="articles__data">
-                  <time class="articles__date" datetime="2023-08-02 19:00">02 августа, 2023</time>
-                  <a class="articles__comments" href="">
-                    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
-                      <use href="assets/images/sprite.svg#comments-icon"/>
-                    </svg>
-                    <span class="articles__comments-count">2</span>
-                    <span class="visually-hidden">Ссылка на комментарии к статье.</span>
-                  </a>
-                </div>
-
-                <h3 class="articles__title">
-                  <a href="#">Защита ваших татуировок от солнца - все про SPF</a>
-                </h3>
-                <p class="articles__text">Разбираемся, как выбирать и использовать солнцезащитный крем, чтобы ваши татуировки радовали вас как можно дольше.</p>
-
-                <div class="articles__read">
-                  <a class="articles__read-link" href="#">Читать</a>
-                  <svg class="articles__read-icon" width="21" height="16" viewBox="0 0 21 16" aria-hidden="true" focusable="false">
-                    <use href="assets/images/sprite.svg#arrow-to-right-icon"/>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="articles__item">
-              <img class="articles__image" src="assets/images/blog/blog2.jpg" width="262" height="153" alt="Фото мужчины и женщины в татуировках, стоящих спинами друг к другу.">
-              <div class="articles__content">
-                <div class="articles__data">
-                  <time class="articles__date" datetime="2023-07-23 19:00">23 июля, 2023</time>
-                  <a class="articles__comments" href="">
-                    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
-                      <use href="assets/images/sprite.svg#comments-icon"/>
-                    </svg>
-                    <span class="articles__comments-count">4</span>
-                    <span class="visually-hidden">Ссылка на комментарии к статье.</span>
-                  </a>
-                </div>
-
-                <h3 class="articles__title">
-                  <a href="#">Татуировка выцветает?</a>
-                </h3>
-                <p class="articles__text">Почему татуировка теряет яркость после заживления? Почему татуировка с годами уже не выглядит так же сочно, как только что сделанная?</p>
-
-                <div class="articles__read">
-                  <a class="articles__read-link" href="#">Читать</a>
-                  <svg class="articles__read-icon" width="21" height="16" viewBox="0 0 21 16" aria-hidden="true" focusable="false">
-                    <use href="assets/images/sprite.svg#arrow-to-right-icon"/>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="articles__item">
-              <img class="articles__image" src="assets/images/blog/blog3.jpg" width="262" height="153" alt="Фото бритого мужского затылка с яркой татуировкой на голове и шее.">
-              <div class="articles__content">
-                <div class="articles__data">
-                  <time class="articles__date" datetime="2023-06-13 19:00">13 июня, 2023</time>
-                  <a class="articles__comments" href="">
-                    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
-                      <use href="assets/images/sprite.svg#comments-icon"/>
-                    </svg>
-                    <span class="articles__comments-count">7</span>
-                    <span class="visually-hidden">Ссылка на комментарии к статье.</span>
-                  </a>
-                </div>
-
-                <h3 class="articles__title">
-                  <a href="#">Про татуировки в стиле Реализм</a>
-                </h3>
-                <p class="articles__text">Когда таутировка "как живая" — это реализм. Если татуировка в стиле 3-D — это тоже реализм. Портрет как на фотографии? Да, и это реализм.</p>
-
-                <div class="articles__read">
-                  <a class="articles__read-link" href="#">Читать</a>
-                  <svg class="articles__read-icon" width="21" height="16" viewBox="0 0 21 16" aria-hidden="true" focusable="false">
-                    <use href="assets/images/sprite.svg#arrow-to-right-icon"/>
-                  </svg>
-                </div>
-              </div>
-            </li>
-
-            <li class="articles__item">
-              <img class="articles__image" src="assets/images/blog/blog4.jpg" width="262" height="153" alt="Фото бородатого мужчины с татуированными руками, обхватившего руками голову.">
-              <div class="articles__content">
-                <div class="articles__data">
-                  <time class="articles__date" datetime="2023-05-21 19:00">21 мая, 2023</time>
-                  <a class="articles__comments" href="">
-                    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
-                      <use href="assets/images/sprite.svg#comments-icon"/>
-                    </svg>
-                    <span class="articles__comments-count">1</span>
-                    <span class="visually-hidden">Ссылка на комментарии к статье.</span>
-                  </a>
-                </div>
-
-                <h3 class="articles__title">
-                  <a href="#">Аллергия на татуировку</a>
-                </h3>
-                <p class="articles__text">Тест на аллергию на татуировочную краску в СПб? Мы наконец разобрались с этим вопросом и сейчас вам все в подробностях расскажем.</p>
-
-                <div class="articles__read">
-                  <a class="articles__read-link" href="#">Читать</a>
-                  <svg class="articles__read-icon" width="21" height="16" viewBox="0 0 21 16" aria-hidden="true" focusable="false">
-                    <use href="assets/images/sprite.svg#arrow-to-right-icon"/>
-                  </svg>
-                </div>
-              </div>
-            </li>
-          </ul><!-- /.articles__list -->
-
-          <div class="text-center">
-            <a class="articles__button button button--secondary" href="#">Читать блог</a>
-          </div>
-        </div><!-- /.articles -->
-      </div><!-- /.container -->
-    </section>
-
-    <!-- Contacts -->
-    <section class="section section--map" id="contacts" data-scrollspy="#contacts">
-      <!-- <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adcc8f2858653eff5b9b677d8ff87785a87ac38bbc12fb8709ab70f14718b2455&amp;source=constructor"
-          width="500" 
-          height="400" 
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Карта с адресом студии Tattooz">
-      </iframe> -->
-
-      <div class="container">
-        <div class="contacts">
-          <h2 class="contacts__title">Студия &#171;Tattooz&#187;</h2>
-          <address class="contacts__content">
-            <div class="contacts__content-item contacts__address">ул. Восстания, 13</div>
-            <a class="contacts__content-item contacts__tel" href="tel:+79219224646" >+7 (921) 922-46-46</a>
-            <a class="contacts__content-item contacts__email" href="mailto:spb@tattooz.ru">spb@tattooz.ru</a>
-            <div class="contacts__content-item contacts__work-time">Работаем круглосуточно</div>
-          </address>
-          
-          <ul class="contacts__social social">
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                  <use href="assets/images/sprite.svg#instagram-icon"/>
-                </svg>
-                <span class="visually-hidden">Tattooz в инстаграме.</span>
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                  <use href="assets/images/sprite.svg#vk-icon"/>
-                </svg>
-                <span class="visually-hidden">Tattooz во вконтакте.</span>
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                  <use href="assets/images/sprite.svg#telegram-icon"/>
-                </svg>
-                <span class="visually-hidden">Tattooz в телеграме.</span>
-              </a>
-            </li>
-
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-                  <use href="assets/images/sprite.svg#whatsApp-icon"/>
-                </svg>
-                <span class="visually-hidden">Tattooz в вотсапп.</span>
-              </a>
-            </li>
-          </ul>
-        </div><!-- /.contacts -->
-      </div><!-- /.container -->
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__col footer__col--first">
-          <a class="logo">
-            <img src="assets/images/logo.png" width="190" height="38" alt="Логотип студии Tattooz.">
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <container class="container">
+        <nav class="navigation" id="navigation">
+          <a class="logo" href="#" data-scroll="#hero">
+            <img src="assets/images/logo.png" width="190" height="38" alt="Логотип студии Tatooz.">
           </a>
-          <a class="footer__policy-link" href="#">Политика конфиденциальности и соглашение на обработку персональных данных</a>
-        </div>
-
-        <div class="footer__col footer__col--second">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Главная</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Галерея</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Услуги и цены</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Мастера</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Блог</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer__col footer__col--third">
-          <button class="footer__button button button--primary" type="button" data-modal="#makeAppointmentModal">Записаться на прием</button>
-          <div class="footer__tel">
-            <img class="footer__tel-icon" src="assets/images/social/whatsApp_mini-icon.svg" width="22" height="22" alt="Иконка viber.">
-            <img class="footer__tel-icon" src="assets/images/social/viber_mini-icon.svg"  width="22" height="22" alt="Иконка whatsApp.">
-            <img class="footer__tel-icon" src="assets/images/social/phone_mini-icon.svg" width="22" height="22" alt="Иконка телефонной трубки.">
-            <a class="footer__link" href="tel:+79219224646">+7 (921) 922-46-46</a>
+          
+          <div class="navigation__wrapper">
+            <ul class="navigation__list" id="userNavigation">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#" data-scroll="#about">О нас</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#" data-scroll="#gallery">Галерея</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#" data-scroll="#services">Услуги</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#" data-scroll="#team">Мастера</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#" data-scroll="#reviews">Отзывы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#" data-scroll="#faq">FAQ</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#" data-scroll="#articles">Статьи</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#" data-scroll="#contacts">Контакты</a>
+              </li>
+            </ul>
+            
+            <button class="burger" type="button" id="navigationToggle">
+              <span class="burger__line">1</span>
+              <span class="burger__line">2</span>
+              <span class="burger__line">3</span>
+              <span class="burger__line">4</span>
+            </button>
+            <!-- <address>
+              <a class="phone" href="tel:82345556789">8 (234) 555-67-89</a>
+            </address> -->
           </div>
-        </div>
-      </div> <!-- /.footer__inner -->
+        </nav>
+      </container>
+    </header>
 
-      <div class="footer__copy">2011-2023 &#169; Все права защищены</div>
-    </div>
-  </footer>
+    <!-- Main -->
+    <main>
 
-  
-  <!-- Modals -->
-  <div class="modal" id="getСonsultationModal">
-    <div class="modal__inner">
-      <div class="modal__frame">
-        <div class="modal__content">
-          <div class="modal__header">
-            <h4 class="modal__title">Остались вопросы?</h4>
-            <div class="modal__text">
-              <p>Оставьте свои контакты и мы с вами свяжемся!</p>
-            </div>
+      <!-- Hero -->
+      <div class="hero" id="hero">
+        
+        <div class="hero__slider" id="heroSlider">
+          <div class="hero__slider-item">
+            <img class="hero__slider-photo" src="assets/images/hero-bg-1.jpg" alt="">
           </div>
-
-          <form class="form" action="/" method="post">
-            <div class="form__group">
-              <input class="input input--user" type="text" placeholder="Имя" id="consultation-form-name" name="consultation-form-name" required>
-              <input class="input input--phone" type="tel" placeholder="Телефон" id="consultation-form-phone" name="consultation-form-phone" required>
-            </div>
-            <button class="button button--primary" type="submit">Получить консультацию</button>
-          </form>
-        </div><!-- /.modal__content -->
-
-        <button class="modal__close" type="button" data-modal-close>
-          <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
-        </button>
-      </div><!-- /.modal__frame -->
-    </div><!-- /.modal__inner -->
-  </div><!-- /.modal -->
-
-
-  <div class="modal" id="thanksModal">
-    <div class="modal__inner">
-      <div class="modal__frame">
-        <div class="modal__content">
-          <div class="modal__header">
-            <h4 class="modal__title">Спасибо!</h4>
-            <div class="modal__text">
-              <p>Наш администратор скоро вам позвонит</p>
-            </div>
+          <div class="hero__slider-item">
+            <img class="hero__slider-photo" src="assets/images/hero-bg-2.jpg" alt="">
+          </div>
+          <div class="hero__slider-item">
+            <img class="hero__slider-photo" src="assets/images/hero-bg-2.jpg" alt="">
           </div>
         </div>
 
-        <button class="modal__close" type="button" data-modal-close>
-          <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
-        </button>
-      </div><!-- /.modal__frame -->
-    </div><!-- /.modal__inner -->
-  </div><!-- /.modal -->
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="visually-hidden">Студия татуировки Tattooz.</h1>
+              <div class="hero__slogan" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">We Provide Forever.</div>
+              <div class="hero__text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+                <p>12 лет делаем художественные татуировки в СПб. Стерильность и безопасность &#8212; наше главное правило. Мастера студии &#8212; художники с большим опытом в татуировании. Для нас не бывает неинтересных проектов.</p>
+              </div>
+              <button class="hero__button button button--primary" type="button" data-modal="#makeAppointmentModal" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">Записаться</button>
+            </div>
+          </div><!-- /.hero__inner -->
+        </div>
+      </div>
 
+      <!-- About -->
+      <section class="section" id="about" data-scrollspy="#about">
+        <div class="container">
+          <h2 class="section__title">О студии</h2>
+          <p class="section__suptitle">Уже 12 лет мы, не покладая тату-машинок, игл для пирсинга, лазеров для удаления и планшетов для рисования, делаем людей счастливее, красивее и увереннее в себе</p>
+        </div>
+        <div class="container-right">
+          <div class="about">
+            <div class="about__info">
+              <h3 class="section__subtitle" data-aos="fade-left">Стабильное качество &#8212; это практика</h3>
+              <div class="about__text" data-aos="fade-left" data-aos-delay="50">
+                <p>Чтобы быть гуру в таком ремесле, где тесно сочетаются творческий процесс и медицинская процедура, необходимо сохранять «свежий» взгляд и одновременно постоянно совершенствуя свои навыки. Залог успеха &#8212; это постоянная практика, творческие вызовы и компания единомышленников.</p>
+                <p> Можно долго перечислять, чем мы можем быть полезны в вопросах татуировки и пирсинга, но проще сказать, что мы действительно можем всё! И да, мы этим гордимся. Как и качеством наших работ, стерильностью салонов, современностью инструментов и подхода к работе. А ещё &#8212; нашей командой.</p>
+                <p>Записывайся на консультации, приходи в гости, взгляни своими глазами новую историю татуировки, которую создаем мы, TATTOOZ.</p>
+              </div>
+              <button class="about__button button button--primary" type="button" data-modal="#makeAppointmentModal" data-aos="fade-left" data-aos-delay="50">Записаться</button>
+              <button class="about__button button button--secondary" type="button" data-modal="#getСonsultationModal" data-aos="fade-left" data-aos-delay="50">Консультация</button>
+            </div>
 
-  <div class="modal" id="makeAppointmentModal">
-    <div class="modal__inner">
-      <div class="modal__frame">
-        <div class="modal__content modal__content--big">
-          <div class="modal__header">
-            <h4 class="modal__title">Запись на прием</h4>
+            <div class="about__image-wrapper">
+              <img src="assets/images/about-image.jpg" width="1334" height="1001" alt="Изображение того, как мастер сосредоточенно делает тату на руке клиента.">
+            </div>
+          </div><!-- /.about -->
+        </div><!-- /.container -->
+      </section>
+
+      <!-- Advantages -->
+      <section class="section section--light">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-left">Почему стоит обратиться именно к нам?</h2>
+          <ul class="advantages">        
+            <li class="advantages__item" data-aos="slide-up" data-aos-duration="800" data-aos-anchor=".advantages">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--supplies"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Оборудование</p>
+                  <p class="advantage__text">Качественные инструменты и расходные материалы</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="advantages__item" data-aos="slide-up" data-aos-delay="100" data-aos-duration="800" data-aos-anchor=".advantages">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--tattoo-table"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Стерильность</p>
+                  <p class="advantage__text">Соответствие санитарным нормам</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="advantages__item" data-aos="slide-up" data-aos-delay="150" data-aos-duration="800" data-aos-anchor=".advantages">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--hands"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Выбор</p>
+                  <p class="advantage__text">Работа в всех популярных стилях татуировки</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="advantages__item" data-aos="slide-up" data-aos-delay="200" data-aos-duration="800" data-aos-anchor=".advantages">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--sketching"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Индивидуальный подход</p>
+                  <p class="advantage__text">Разработка эскиза с учетом пожеланий клиента</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="advantages__item" data-aos="slide-up" data-aos-delay="250" data-aos-duration="800" data-aos-anchor=".advantages">
+              <div class="advantage">
+                <span class="advantage__image advantage__image--catalogue"></span>
+                <div class="advantage__description">
+                  <p class="advantage__title">Тату в день обращения</p>
+                  <p class="advantage__text">Свободные эскизы по выгодной стоимости</p>
+                </div>
+              </div>
+            </li>
+          </ul><!-- /.advantages -->
+        </div><!-- /.container -->
+      </section>
+
+      <!-- Gallery -->
+      <section class="section" id="gallery" data-scrollspy="#gallery">
+        <div class="container">
+          <h2 class="section__title">Наши свежайшие работы</h2>
+          <p class="section__suptitle">Наши мастера могут сделать тату в любом стиле <br>и у каждого в запасе всегда есть горячие эскизы</p>
+
+          <div class="gallery">
+            <form class="gallery__filters-form filters-form" action="index.html" method="get" autocomplete="off">
+              <button class="filters-form__button filters-form__button--active button button--small" id="filter-default">Все</button>
+              <button class="filters-form__button button button--small" id="filter-body">Тату на теле</button>
+              <button class="filters-form__button button button--small" id="filter-hands">Тату на руках</button>
+              <button class="filters-form__button button button--small" id="filter-legs">Тату на ногах</button>
+              <button class="filters-form__button button button--small" id="filter-head">Тату на голове</button>
+            </form>
+
+            <ul class="gallery__photos photos">
+              <li class="photos__item" data-aos="fade-in">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g1.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="50">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g2.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="100">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g3.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="150">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g4.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g5.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="50">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g6.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="100">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g7.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="150">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g8.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g1.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="50">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g2.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="100">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g3.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+
+              <li class="photos__item" data-aos="fade-in" data-aos-delay="150">
+                <a class="photos__link" href="#">
+                  <div class="photos__info">
+                    <h4 class="photos__title">Татуировка кролик Роджер и Джессика Реббит</h4>
+                    <div class="photos__master">Мастер: <span>Константин Эрнст</span></div>
+                    <div class="photos__style">Стиль: <span>Реализм</span></div>
+                  </div>
+                  <img class="photos__image" src="assets/images/gallery/g4.jpg.webp" width="274" height="342" alt="">
+                </a>
+              </li>
+            </ul><!-- /.gallery__photos -->
+
+            <div class="text-center">
+              <a class="gallery__button button button--secondary" href="#">Все работы</a>
+            </div>
+          </div><!-- /.gallery -->
+        </div><!-- /.container -->
+      </section>
+
+      <!-- Services -->
+      <section class="section section--light" id="services" data-scrollspy="#services">
+        <div class="container">
+          <h2 class="section__title" data-aos="fade-down">Какие услуги мы предлагаем</h2>
+
+          <div class="services">
+            <ul class="services__list">
+              <li class="services__item" data-aos="fade-down" data-aos-delay="100" data-aos-anchor=".services">
+                <a class="services__link" href="#">
+                  <div class="services__image services__image--tatoo-machine"></div>
+                  <h3 class="services__title">Татуировка</h3>
+                </a>
+                <p class="services__description">Вы можете выбрать тату из нашего каталога или предоставить свой эскиз</p>
+                <span class="services__price">от 1000 p.</span>
+              </li>
+              
+              <li class="services__item" data-aos="fade-down" data-aos-delay="150" data-aos-anchor=".services">
+                <a class="services__link" href="#">
+                  <div class="services__image services__image--tattoo-pen"></div>
+                  <h3 class="services__title">Разработка <br>индивидуального эскиза</h3>
+                </a>
+                <p class="services__description">Мы создаем уникальные и креативные дизайны, которые соответствуют вашим пожеланиям и стилю жизни</p>
+                <span class="services__price">от 3000 p.</span>
+              </li>
+
+              <li class="services__item" data-aos="fade-down" data-aos-delay="200" data-aos-anchor=".services">
+                <a class="services__link" href="#">
+                  <div class="services__image services__image--piercing"></div>
+                  <h3 class="services__title">Пирсинг</h3>
+                </a>
+                <p class="services__description">Мы предлагаем широкий выбор украшений, а наши мастера установят вам пирсы безопасно и комфортно</p>
+                <span class="services__price">от 2000 p.</span>
+              </li>
+
+              <li class="services__item" data-aos="fade-down" data-aos-delay="250" data-aos-anchor=".services">
+                <a class="services__link" href="#">
+                  <div class="services__image services__image--flower"></div>
+                  <h3 class="services__title">Корректировка татуировок</h3>
+                </a>
+                <p class="services__description">Подправим цвет или форму вашей старой татуировки, чтобы она выглядела лучше</p>
+                <span class="services__price">от 1000 p.</span>
+              </li>
+
+              <li class="services__item" data-aos="fade-down" data-aos-delay="300" data-aos-anchor=".services">
+                <a class="services__link" href="#">
+                  <div class="services__image services__image--cleaning-brush"></div>
+                  <h3 class="services__title">Удаление татуировок</h3>
+                </a>
+                <p class="services__description">С помощью современных технологий удалим татуировки без повреждения кожи и образования шрамов</p>
+                <span class="services__price">от 1000 p.</span>
+              </li>
+
+              <li class="services__item" data-aos="fade-down" data-aos-delay="350" data-aos-anchor=".services">
+                <a class="services__link" href="#">
+                  <div class="services__image services__image--tattoo-master"></div>
+                  <h3 class="services__title">Обучение искусству татуировки</h3>
+                </a>
+                <p class="services__description">Если вы мечтаете стать тату-мастером, мы предлагаем курсы, которые помогут вам развить свои навыки</p>
+                <span class="services__price">от 1000 p.</span>
+              </li>
+            </ul><!-- /.services__list -->
+
+            <div class="text-center">
+              <a class="services__button button button--secondary" href="#!" data-aos="fade-down" data-aos-anchor=".services">Все услуги</a>
+            </div>
+          </div><!-- /.services -->
+        </div><!-- /.container -->
+      </section>
+
+      <!-- Promo -->
+      <div class="promo">
+        <div class="container">
+          <div class="promo__content">
+            <div class="promo__title">Подарочные сертификаты</div>
+            <p class="promo__text">Запоминающийся подарок &#8212; сложная задача, с которой легко справляется подарочный сертификат на тату или пирсинг. Вы имеете возможность подарить близкому человеку творческий подарок, который останется с ним на всю жизнь. За подробной информацией обращайтесь к нашим администраторам.</p>
+            <a class="button button--secondary" href="#">Заказать сертификат</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team -->
+      <section class="section section--light" id="team" data-scrollspy="#team">
+        <div class="container">
+          <h2 class="section__title">Наши мастера</h2>
+          <p class="section__suptitle">С нами вы в надежных руках!</p>
+
+          <div class="team">
+            <ul class="team__list">
+              <li class="team__item" data-aos="fade-in">
+                <a class="team__link" href="#">
+                  <img class="team__image" src="assets/images/team/team-1.jpg.webp" width="263" height="405" alt="Фото Алексея Евгеньева.">
+                </a>
+
+                <div class="team__content">
+                  <h3 class="team__name">Алексей Евгеньев</h3>
+                  <p class="team__description">Стаж более 9 лет</p>
+
+                  <ul class="team__social social">
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#instagram-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на инстаграм мастера.</span>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#vk-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на вконтакте мастера.</span>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#pinterest-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на пинтерест мастера.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li><!-- /.team__item -->
+
+              <li class="team__item" data-aos="fade-in" data-aos-delay="100">
+                <a class="team__link" href="#">
+                  <img class="team__image" src="assets/images/team/team-2.jpg.webp" width="263" height="405" alt="Фото Марии Кацер.">
+                </a>
+
+                <div class="team__content">
+                  <h3 class="team__name">Мария Кацер</h3>
+                  <p class="team__description">Стаж более 10 лет</p>
+
+                  <ul class="team__social social">
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#instagram-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на инстаграм мастера.</span>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#vk-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на вконтакте мастера.</span>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#pinterest-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на пинтерест мастера.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li><!-- /.team__item -->
+
+              <li class="team__item" data-aos="fade-in" data-aos-delay="200">
+                <a class="team__link" href="#">
+                  <img class="team__image" src="assets/images/team/team-3.jpg.webp" width="263" height="405" alt="Фото Евгения Финского.">
+                </a>
+
+                <div class="team__content">
+                  <h3 class="team__name">Евгений Финский</h3>
+                  <p class="team__description">Стаж более 12 лет</p>
+
+                  <ul class="team__social social">
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#instagram-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на инстаграм мастера.</span>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#vk-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на вконтакте мастера.</span>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#pinterest-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на пинтерест мастера.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li><!-- /.team__item -->
+
+              <li class="team__item" data-aos="fade-in" data-aos-delay="400">
+                <a class="team__link" href="#">
+                  <img class="team__image" src="assets/images/team/team-4.jpg.webp" width="263" height="405" alt="Фото Дарьи Казанцевой.">
+                </a>
+
+                <div class="team__content">
+                  <h3 class="team__name">Дарья Казанцева</h3>
+                  <p class="team__description">Стаж более 8 лет</p>
+
+                  <ul class="team__social social">
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#instagram-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на инстаграм мастера.</span>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#vk-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на вконтакте мастера.</span>
+                      </a>
+                    </li>
+
+                    <li class="social__item">
+                      <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                          <use href="assets/images/sprite.svg#pinterest-icon"/>
+                        </svg>
+                        <span class="visually-hidden">Ссылка на пинтерест мастера.</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li><!-- /.team__item -->
+            </ul><!-- /.team__list -->
+
+            <a class="team__button button button--secondary" href="#">Все мастера</a>
+          </div><!-- /.team -->
+        </div><!-- /.container -->
+      </section>
+
+      <!-- Reviews -->
+      <section class="section" id="reviews" data-scrollspy="#reviews">
+        <div class="container">
+          <div class="reviews">
+            <h2 class="visually-hidden">Отзывы</h2>
+            <ul class="reviews__list" id="reviewsSlider">
+              <li class="reviews__item">
+                <div class="reviews__content">
+                  <div class="reviews__image-wrapper">
+                    <img class="reviews__image" src="assets/images/reviews/review-1.jpg" width="180" height="180" alt="Черно-белое фото девушки.">
+                  </div>
+                  <div class="reviews__name">Елена</div>
+                  <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
+                </div>
+              </li>
+
+              <li class="reviews__item">
+                <div class="reviews__content">
+                  <div class="reviews__image-wrapper">
+                    <img class="reviews__image" src="assets/images/reviews/review-2.jpg" width="180" height="180" alt="Черно-белое фото молодого человека.">
+                  </div>
+                  <div class="reviews__name">Александр</div>
+                  <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
+                </div>
+              </li>
+
+              <li class="reviews__item">
+                <div class="reviews__content">
+                  <div class="reviews__image-wrapper">
+                    <img class="reviews__image" src="assets/images/reviews/review-3.jpg" width="180" height="180" alt="Черно-белое фото мужчины.">
+                  </div>
+                  <div class="reviews__name">Филипп</div>
+                  <p class="reviews__text">&laquo; Долго выбирала студию для тату, остановилась именно на этом салоне, и не ошиблась! Мастера приветливые, общительные, а самое главное компетентные, комфортная атмосфера! Расположение очень удобное, легко добраться. Рекомендую! &raquo;</p>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.reviews -->
+        </div><!-- /.container -->
+      </section>
+
+      <!-- FAQ -->
+      <section class="section section--light" id="faq" data-scrollspy="#faq">
+        <div class="container">
+          <div class="faq">
+            <div class="faq__wrapper">
+              <h3 class="section__subtitle" data-aos="fade-left">Часто задаваемые вопросы</h3>
+
+              <div class="faq__accordion accordion" data-aos="fade-left">
+                <div class="accordion__item">
+                  <input class="accordion__input" type="checkbox" id="faq_1">
+                  <label class="accordion__title" for="faq_1">Какова минимальная цена татуировки?</label>
+                  <div class="accordion__text">
+                    <p>Минимальная цена на тату у нас составляет 3000 рублей. Но все зависит от выбранного мастера, стиля, сложности. Напишите или позвоните нам - мы бесплатно проконсультируем вас и подберём идеальную тату</p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <input class="accordion__input" type="checkbox" id="faq_2">
+                  <label class="accordion__title" for="faq_2">Сколько нельзя плавать после того, как сделал татуировку?</label>
+                  <div class="accordion__text">
+                    <p>Плавать в бассейне и принимать ванны не рекомендуется около 15 дней после тату, а плавать в море, реках и прочих природных водоёмах не рекомендуется около месяца после татуировки. Подробнее читайте в <a href="#">нашей статье</a></p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <input class="accordion__input" type="checkbox" id="faq_3">
+                  <label class="accordion__title" for="faq_3">После тату нельзя загорать?</label>
+                  <div class="accordion__text">
+                    <p>Да, весьма нежелательно: воздержитесь от солнечных ванн до полного заживления татуировки, а это, как правило, около 1,5 - 2 месяцев. Кроме того, даже после заживления настоятельно рекомендуем пользоваться солнцезащитной косметикой с SPF 50+,т.к. она защитит не только от ожогов кожи, но и от выгорания рисунка, и вы дольше сохраните свою тату в первозданном виде. Почитайте нашу статью о <a href="#">правилах загара после тату</a></p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <input class="accordion__input" type="checkbox" id="faq_4">
+                  <label class="accordion__title" for="faq_4">Делаете ли вы тату несовершеннолетним?</label>
+                  <div class="accordion__text">
+                    <p>Только с согласия родителей/опекуна с 16 лет. Пирсинг строго после 18, даже если есть согласие родителей.</p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <input class="accordion__input" type="checkbox" id="faq_5">
+                  <label class="accordion__title" for="faq_5">Можно ли перекрыть старую татуировку?</label>
+                  <div class="accordion__text">
+                    <p>Перекрыть можно всё от мала до велика: мы подберём эскиз и краски так, что от старой тату не останется и следа. А если у вас чёрные контуры или участки, полностью закрашенные в чёрный цвет, предварительно мы можем осветлить тату лазером, тогда поверх можно будет нанести любой новый рисунок.</p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <input class="accordion__input" type="checkbox" id="faq_6">
+                  <label class="accordion__title" for="faq_6">Больно ли бить тату? Где больнее всего?</label>
+                  <div class="accordion__text">
+                    <p>Боль - понятие субъективное: кому-то больно, кому-то терпимо. Всё зависит от вашего болевого порога + места, на которое наносится рисунок: наиболее чувствительными считаются места, где мало мышечной и жировой ткани, тоньше кожа или много нервных окончаний. Об этом нас тоже часто спрашивают, поэтому читайте подробную статью о том, <a href="#">где больнее бить тату</a></p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <input class="accordion__input" type="checkbox" id="faq_7">
+                  <label class="accordion__title" for="faq_7">Алкоголь до и после тату: правда ли, что нельзя?</label>
+                  <div class="accordion__text">
+                    <p>Да, и это не блажь. За день-два до нанесения татуировки не рекомендуется пить алкоголь и/или разжижающие кровь вещества, такие, как аспирин, например, потому что это может вызвать обильное кровотечение во время сеанса тату. Ну и, кроме того, решения о таких изменениях лучше принимать на трезвую голову) Ну а после татуировки также стоит воздержаться от алкоголя 3-5 дней, как и после любой другой медицинской процедуры (типа удаления зуба). Алкоголь разжижает кровь, и это может не только увеличить процесс заживления, но и спровоцировать воспаления и заражения. Подробнее читайте в <a href="#">статье</a></p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <input class="accordion__input" type="checkbox" id="faq_8">
+                  <label class="accordion__title" for="faq_8">Можно ли удалить татуировку?</label>
+                  <div class="accordion__text">
+                    <p>Да. Современное лазерное оборудование позволяет человеку избавиться от чернил под кожей за несколько сеансов. Наша студия оказывает такую услугу, с подробностями, примерами работ и прайсом вы можете ознакомиться <a href="#">здесь</a></p>
+                  </div>
+                </div>
+              </div><!-- /.faq__accordion -->
+            </div><!-- /.faq__wrapper -->
+
+            <div class="faq__image-wrapper">
+              <img class="faq__image" src="assets/images/faq-img_1.jpg" width="" height="" alt="Фото бородатого мужчины с татуировкой быка на груди, смотрящего вправо вверх.">
+            </div>
+          </div><!-- /.faq -->
+        </div><!-- /.container -->
+      </section>
+
+      <div class="consultation">
+        <div class="container">
+          <div class="consultation__wrapper">
+            <div class="consultation-form">
+              <div class="consultation-form__header">
+                <h3 class="consultation-form__title" data-aos="fade-left">Остались вопросы?</h3>
+                <div class="consultation-form__text" data-aos="fade-left" data-aos-delay="200" data-aos-anchor=".consultation">Оставьте свои контакты и мы с вами свяжемся!</div>
+              </div>
+
+              <div class="consultation-form__content" data-aos="fade-left" data-aos-delay="400" data-aos-anchor=".consultation">
+                <form class="form" action="/" method="post">
+                  <div class="form__group">
+                    <input class="input input--user" type="text" placeholder="Имя">
+                    <input class="input input--phone" type="tel" placeholder="Телефон">
+                  </div>
+                  <button class="button button--primary" type="submit">Получить консультацию</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.container -->
+      </div><!-- /.consultation -->
+
+      <!-- Articles -->
+      <section class="section" id="articles" data-scrollspy="#articles">
+        <div class="container">
+          <h2 class="section__title">Новые статьи</h2>
+          <p class="section__suptitle">Будьте в курсе с нами!</p>
+
+          <div class="articles">
+            <ul class="articles__list">
+              <li class="articles__item" data-aos="fade-in">
+                <img class="articles__image" src="assets/images/blog/blog1.jpg" width="262" height="153" alt="Фото женских рук с забитым рукавом, обнимающих книгу.">
+                <div class="articles__content">
+                  <div class="articles__data">
+                    <time class="articles__date" datetime="2023-08-02 19:00">02 августа, 2023</time>
+                    <a class="articles__comments" href="">
+                      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                        <use href="assets/images/sprite.svg#comments-icon"/>
+                      </svg>
+                      <span class="articles__comments-count">2</span>
+                      <span class="visually-hidden">Ссылка на комментарии к статье.</span>
+                    </a>
+                  </div>
+
+                  <h3 class="articles__title">
+                    <a href="#">Защита ваших татуировок от солнца - все про SPF</a>
+                  </h3>
+                  <p class="articles__text">Разбираемся, как выбирать и использовать солнцезащитный крем, чтобы ваши татуировки радовали вас как можно дольше.</p>
+
+                  <div class="articles__read">
+                    <a class="articles__read-link" href="#">Читать</a>
+                    <svg class="articles__read-icon" width="21" height="16" viewBox="0 0 21 16" aria-hidden="true" focusable="false">
+                      <use href="assets/images/sprite.svg#arrow-to-right-icon"/>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+
+              <li class="articles__item" data-aos="fade-in" data-aos-delay="100">
+                <img class="articles__image" src="assets/images/blog/blog2.jpg" width="262" height="153" alt="Фото мужчины и женщины в татуировках, стоящих спинами друг к другу.">
+                <div class="articles__content">
+                  <div class="articles__data">
+                    <time class="articles__date" datetime="2023-07-23 19:00">23 июля, 2023</time>
+                    <a class="articles__comments" href="">
+                      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                        <use href="assets/images/sprite.svg#comments-icon"/>
+                      </svg>
+                      <span class="articles__comments-count">4</span>
+                      <span class="visually-hidden">Ссылка на комментарии к статье.</span>
+                    </a>
+                  </div>
+
+                  <h3 class="articles__title">
+                    <a href="#">Татуировка выцветает?</a>
+                  </h3>
+                  <p class="articles__text">Почему татуировка теряет яркость после заживления? Почему татуировка с годами уже не выглядит так же сочно, как только что сделанная?</p>
+
+                  <div class="articles__read">
+                    <a class="articles__read-link" href="#">Читать</a>
+                    <svg class="articles__read-icon" width="21" height="16" viewBox="0 0 21 16" aria-hidden="true" focusable="false">
+                      <use href="assets/images/sprite.svg#arrow-to-right-icon"/>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+
+              <li class="articles__item" data-aos="fade-in" data-aos-delay="200">
+                <img class="articles__image" src="assets/images/blog/blog3.jpg" width="262" height="153" alt="Фото бритого мужского затылка с яркой татуировкой на голове и шее.">
+                <div class="articles__content">
+                  <div class="articles__data">
+                    <time class="articles__date" datetime="2023-06-13 19:00">13 июня, 2023</time>
+                    <a class="articles__comments" href="">
+                      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                        <use href="assets/images/sprite.svg#comments-icon"/>
+                      </svg>
+                      <span class="articles__comments-count">7</span>
+                      <span class="visually-hidden">Ссылка на комментарии к статье.</span>
+                    </a>
+                  </div>
+
+                  <h3 class="articles__title">
+                    <a href="#">Про татуировки в стиле Реализм</a>
+                  </h3>
+                  <p class="articles__text">Когда таутировка "как живая" — это реализм. Если татуировка в стиле 3-D — это тоже реализм. Портрет как на фотографии? Да, и это реализм.</p>
+
+                  <div class="articles__read">
+                    <a class="articles__read-link" href="#">Читать</a>
+                    <svg class="articles__read-icon" width="21" height="16" viewBox="0 0 21 16" aria-hidden="true" focusable="false">
+                      <use href="assets/images/sprite.svg#arrow-to-right-icon"/>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+
+              <li class="articles__item" data-aos="fade-in" data-aos-delay="300">
+                <img class="articles__image" src="assets/images/blog/blog4.jpg" width="262" height="153" alt="Фото бородатого мужчины с татуированными руками, обхватившего руками голову.">
+                <div class="articles__content">
+                  <div class="articles__data">
+                    <time class="articles__date" datetime="2023-05-21 19:00">21 мая, 2023</time>
+                    <a class="articles__comments" href="">
+                      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true" focusable="false">
+                        <use href="assets/images/sprite.svg#comments-icon"/>
+                      </svg>
+                      <span class="articles__comments-count">1</span>
+                      <span class="visually-hidden">Ссылка на комментарии к статье.</span>
+                    </a>
+                  </div>
+
+                  <h3 class="articles__title">
+                    <a href="#">Аллергия на татуировку</a>
+                  </h3>
+                  <p class="articles__text">Тест на аллергию на татуировочную краску в СПб? Мы наконец разобрались с этим вопросом и сейчас вам все в подробностях расскажем.</p>
+
+                  <div class="articles__read">
+                    <a class="articles__read-link" href="#">Читать</a>
+                    <svg class="articles__read-icon" width="21" height="16" viewBox="0 0 21 16" aria-hidden="true" focusable="false">
+                      <use href="assets/images/sprite.svg#arrow-to-right-icon"/>
+                    </svg>
+                  </div>
+                </div>
+              </li>
+            </ul><!-- /.articles__list -->
+
+            <div class="text-center">
+              <a class="articles__button button button--secondary" href="#">Читать блог</a>
+            </div>
+          </div><!-- /.articles -->
+        </div><!-- /.container -->
+      </section>
+
+      <!-- Contacts -->
+      <section class="section section--map" id="contacts" data-scrollspy="#contacts">
+        <!-- <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adcc8f2858653eff5b9b677d8ff87785a87ac38bbc12fb8709ab70f14718b2455&amp;source=constructor"
+            width="500" 
+            height="400" 
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Карта с адресом студии Tattooz">
+        </iframe> -->
+
+        <div class="container">
+          <div class="contacts">
+            <h2 class="contacts__title">Студия &#171;Tattooz&#187;</h2>
+            <address class="contacts__content">
+              <div class="contacts__content-item contacts__address">ул. Восстания, 13</div>
+              <a class="contacts__content-item contacts__tel" href="tel:+79219224646" >+7 (921) 922-46-46</a>
+              <a class="contacts__content-item contacts__email" href="mailto:spb@tattooz.ru">spb@tattooz.ru</a>
+              <div class="contacts__content-item contacts__work-time">Работаем круглосуточно</div>
+            </address>
+            
+            <ul class="contacts__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <use href="assets/images/sprite.svg#instagram-icon"/>
+                  </svg>
+                  <span class="visually-hidden">Tattooz в инстаграме.</span>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <use href="assets/images/sprite.svg#vk-icon"/>
+                  </svg>
+                  <span class="visually-hidden">Tattooz во вконтакте.</span>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <use href="assets/images/sprite.svg#telegram-icon"/>
+                  </svg>
+                  <span class="visually-hidden">Tattooz в телеграме.</span>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <svg class="social__icon" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                    <use href="assets/images/sprite.svg#whatsApp-icon"/>
+                  </svg>
+                  <span class="visually-hidden">Tattooz в вотсапп.</span>
+                </a>
+              </li>
+            </ul>
+          </div><!-- /.contacts -->
+        </div><!-- /.container -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col footer__col--first">
+            <a class="logo">
+              <img src="assets/images/logo.png" width="190" height="38" alt="Логотип студии Tattooz.">
+            </a>
+            <a class="footer__policy-link" href="#">Политика конфиденциальности и соглашение на обработку персональных данных</a>
           </div>
 
-          <form class="form form--appointment" action="/" method="post">
-            <div class="form__group">
-              <input class="input input--user" type="text" placeholder="Имя *" id="appointment-form-name" name="appointment-form-name" required>
-              <input class="input input--phone" type="tel" placeholder="Телефон *" id="appointment-form-phone" name="appointment-form-phone" required>
-              <input class="input input--email" type="email" placeholder="E-mail" id="appointment-form-email" name="appointment-form-email">
-              <textarea class="input input--textarea" placeholder="Сообщение *" id="appointment-form-text" name="appointment-form-text" required></textarea>
+          <div class="footer__col footer__col--second">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Главная</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Галерея</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Услуги и цены</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Мастера</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Блог</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__col footer__col--third">
+            <button class="footer__button button button--primary" type="button" data-modal="#makeAppointmentModal">Записаться на прием</button>
+            <div class="footer__tel">
+              <img class="footer__tel-icon" src="assets/images/social/whatsApp_mini-icon.svg" width="22" height="22" alt="Иконка viber.">
+              <img class="footer__tel-icon" src="assets/images/social/viber_mini-icon.svg"  width="22" height="22" alt="Иконка whatsApp.">
+              <img class="footer__tel-icon" src="assets/images/social/phone_mini-icon.svg" width="22" height="22" alt="Иконка телефонной трубки.">
+              <a class="footer__link" href="tel:+79219224646">+7 (921) 922-46-46</a>
             </div>
-            <div class="form__group">
-              <label class="form__title input-file">
-                <input class="visually-hidden input" type="file" id="appointment-form-file" name="appointment-form-file">
-                <span class="input-file__button button button--secondary">Прикрепить файл</span>           
-                <span class="input-file__text">Максимум 10мб</span>
-              </label>
+          </div>
+        </div> <!-- /.footer__inner -->
+
+        <div class="footer__copy">2011-2023 &#169; Все права защищены</div>
+      </div>
+    </footer>
+
+    
+    <!-- Modals -->
+    <div class="modal" id="getСonsultationModal">
+      <div class="modal__inner">
+        <div class="modal__frame">
+          <div class="modal__content">
+            <div class="modal__header">
+              <h4 class="modal__title">Остались вопросы?</h4>
+              <div class="modal__text">
+                <p>Оставьте свои контакты и мы с вами свяжемся!</p>
+              </div>
             </div>
-            <div class="form__group">
-              <label class="form__title">
-                <input class="visually-hidden form__control" type="checkbox" name="appointment-form-terms" required>
-                <span class="form__mark"></span>
-                <span class="form__label">Даю согласие на <a class="form__link" href="#!">обработку персональных данных</a></span>
-              </label>
+
+            <form class="form" action="/" method="post">
+              <div class="form__group">
+                <input class="input input--user" type="text" placeholder="Имя" id="consultation-form-name" name="consultation-form-name" required>
+                <input class="input input--phone" type="tel" placeholder="Телефон" id="consultation-form-phone" name="consultation-form-phone" required>
+              </div>
+              <button class="button button--primary" type="submit">Получить консультацию</button>
+            </form>
+          </div><!-- /.modal__content -->
+
+          <button class="modal__close" type="button" data-modal-close>
+            <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
+          </button>
+        </div><!-- /.modal__frame -->
+      </div><!-- /.modal__inner -->
+    </div><!-- /.modal -->
+
+
+    <div class="modal" id="thanksModal">
+      <div class="modal__inner">
+        <div class="modal__frame">
+          <div class="modal__content">
+            <div class="modal__header">
+              <h4 class="modal__title">Спасибо!</h4>
+              <div class="modal__text">
+                <p>Наш администратор скоро вам позвонит</p>
+              </div>
             </div>
-            <button class="form__button button button--primary" type="submit">Отправить</button>
-          </form>
-        </div><!-- /.modal__content -->
+          </div>
 
-        <button class="modal__close" type="button" data-modal-close>
-          <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
-        </button>
-      </div><!-- /.modal__frame -->
-    </div><!-- /.modal__inner -->
-  </div><!-- /.modal -->
+          <button class="modal__close" type="button" data-modal-close>
+            <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
+          </button>
+        </div><!-- /.modal__frame -->
+      </div><!-- /.modal__inner -->
+    </div><!-- /.modal -->
 
 
-  <!-- Javascript -->
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
-  <script src="assets/js/slick.min.js"></script>
-  <script src="assets/js/app.js"></script>
+    <div class="modal" id="makeAppointmentModal">
+      <div class="modal__inner">
+        <div class="modal__frame">
+          <div class="modal__content modal__content--big">
+            <div class="modal__header">
+              <h4 class="modal__title">Запись на прием</h4>
+            </div>
 
+            <form class="form form--appointment" action="/" method="post">
+              <div class="form__group">
+                <input class="input input--user" type="text" placeholder="Имя *" id="appointment-form-name" name="appointment-form-name" required>
+                <input class="input input--phone" type="tel" placeholder="Телефон *" id="appointment-form-phone" name="appointment-form-phone" required>
+                <input class="input input--email" type="email" placeholder="E-mail" id="appointment-form-email" name="appointment-form-email">
+                <textarea class="input input--textarea" placeholder="Сообщение *" id="appointment-form-text" name="appointment-form-text" required></textarea>
+              </div>
+              <div class="form__group">
+                <label class="form__title input-file">
+                  <input class="visually-hidden input" type="file" id="appointment-form-file" name="appointment-form-file">
+                  <span class="input-file__button button button--secondary">Прикрепить файл</span>           
+                  <span class="input-file__text">Максимум 10мб</span>
+                </label>
+              </div>
+              <div class="form__group">
+                <label class="form__title">
+                  <input class="visually-hidden form__control" type="checkbox" name="appointment-form-terms" required>
+                  <span class="form__mark"></span>
+                  <span class="form__label">Даю согласие на <a class="form__link" href="#!">обработку персональных данных</a></span>
+                </label>
+              </div>
+              <button class="form__button button button--primary" type="submit">Отправить</button>
+            </form>
+          </div><!-- /.modal__content -->
+
+          <button class="modal__close" type="button" data-modal-close>
+            <img src="assets/images/circle.svg" width="21" height="21" alt="Кнопка закрытия всплывающего окна.">
+          </button>
+        </div><!-- /.modal__frame -->
+      </div><!-- /.modal__inner -->
+    </div><!-- /.modal -->
+
+
+    <!-- Javascript -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+
+  </div>
 
 </body>
 </html>

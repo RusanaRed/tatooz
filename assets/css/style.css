@@ -76,6 +76,15 @@ img {
 }
 
 
+/* Page */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+
 /* Button */
 .button {
   display: inline-block;
@@ -127,7 +136,7 @@ img {
 }
 
 .button--small {
-  padding: 10px 20px;
+  padding: 8px 14px;
 
   font-size: 12px;
   font-weight: 700;
@@ -397,9 +406,6 @@ body.nav-show .header {
 .hero__slider .slick-dots button:focus {
   outline: none;
 }
-
-
-
 
 .hero__slider-photo {
   display: block;
