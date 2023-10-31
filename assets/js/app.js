@@ -1,5 +1,14 @@
 $(function() {
 
+  let hero = $('#hero');
+  let header = $('#header');
+  let navigation = $('#navigation');
+
+  let headerH = header.innerHeight();
+  let scrollTop = $(window).scrollTop();
+  let correctionBeforeNextSection = 110;
+
+
   /* Navigation Toggle on mobile
   ================================================*/
 
@@ -21,15 +30,6 @@ $(function() {
     userNavigation.removeClass('show');
   });
 
-
-  
-  let hero = $('#hero');
-  let header = $('#header');
-  let navigation = $('#navigation');
-
-  let headerH = header.innerHeight();
-  let scrollTop = $(window).scrollTop();
-
   /* Header + navigation classes on scroll 
   ================================================*/
 
@@ -43,7 +43,7 @@ $(function() {
     let heroH = hero.innerHeight();
     let scrollTop = $(this).scrollTop();
 
-    if (scrollTop >= heroH) {
+    if (scrollTop >= (heroH - correctionBeforeNextSection)) {
       header.addClass('header--dark');
       navigation.addClass('navigation--no-border');
     } else {
@@ -112,7 +112,7 @@ $(function() {
   });
 
 
-  /* Modal
+  /* Modals
   ================================================*/
 
   $('[data-modal]').on('click', function(event) {
@@ -128,7 +128,7 @@ $(function() {
         transform: 'translateY(0)',
         opacity: '1'
       });
-    }, 200);
+    }, 100);
   });
 
   $('[data-modal-close]').on('click', function(event) {
