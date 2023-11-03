@@ -545,7 +545,7 @@ body.nav-show .header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.5));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.7));
 }
 
 
@@ -696,7 +696,7 @@ body.nav-show .header {
   z-index: 2;
   padding: 15px;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
 
   text-align: center;
@@ -733,6 +733,8 @@ body.nav-show .header {
 
 .photos__image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -856,7 +858,7 @@ body.nav-show .header {
 
   padding: 90px 0;
 
-  background: #000 url("../images/4.jpg.webp") no-repeat center;
+  background: #000 url("../images/promo.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -868,7 +870,7 @@ body.nav-show .header {
   top: 0;
   z-index: 1;
 
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .promo__content {

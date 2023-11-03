@@ -171,8 +171,8 @@ $(function() {
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 700,
+    autoplaySpeed: 3500,
+    speed: 900,
   });
 
   /* Reviews Slider */
