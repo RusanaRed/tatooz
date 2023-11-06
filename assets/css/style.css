@@ -933,6 +933,7 @@ body.nav-show .header {
 
 .team__image {
   width: 100%;
+  min-height: 417px;
   background-color: #0d0f11;
 }
 
