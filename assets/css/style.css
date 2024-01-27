@@ -850,7 +850,7 @@ body.nav-show .header {
 
   padding: 90px 0;
 
-  background: #000 url("../images/promo-image.jpg") no-repeat center;
+  background: #000 url("../images/promo-image-desktop.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -2131,6 +2131,7 @@ body.nav-show .header {
   /* Promo */
   .promo {
     padding: 60px 0;
+    background-image: url("../images/promo-image-tablet.jpg");
   }
 
   .promo__content {
@@ -2181,7 +2182,7 @@ body.nav-show .header {
   }
 
   .articles__image {
-    max-height: 200px;
+    min-height: 200px;
   }
 
   .articles__content::before {
@@ -2382,6 +2383,10 @@ body.nav-show .header {
   }
 
   /* Promo */
+  .promo {
+    background-image: url("../images/promo-image-mobile.jpg");
+  }
+
   .promo__content {
     max-width: 90%;
   }

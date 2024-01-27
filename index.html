@@ -80,13 +80,34 @@
         
         <div class="hero__slider" id="heroSlider">
           <div class="hero__slider-item">
-            <img class="hero__slider-photo" src="assets/images/hero-slider/slide-1.jpg" alt="">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="assets/images/hero-slider/slide-1-desktop.webp 1x, assets/images/hero-slider/slide-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="assets/images/hero-slider/slide-1-tablet.webp 1x, assets/images/hero-slider/slide-1-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="assets/images/hero-slider/slide-1-mobile.webp 1x, assets/images/hero-slider/slide-1-mobile@2x.webp 2x">
+              <source media="(min-width: 1280px)" srcset="assets/images/hero-slider/slide-1-desktop.jpg 1x, assets/images/hero-slider/slide-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="assets/images/hero-slider/slide-1-tablet.jpg 1x, assets/images/hero-slider/slide-1-tablet@2x.jpg 2x">
+              <img class="hero__slider-photo" src="assets/images/hero-slider/slide-1-mobile.jpg" srcset="assets/images/hero-slider/slide-1-mobile@2x.jpg 2x" width="1920" height="1080" alt="">
+            </picture>
           </div>
           <div class="hero__slider-item">
-            <img class="hero__slider-photo" src="assets/images/hero-slider/slide-2.jpg" alt="">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="assets/images/hero-slider/slide-2-desktop.webp 1x, assets/images/hero-slider/slide-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="assets/images/hero-slider/slide-2-tablet.webp 1x, assets/images/hero-slider/slide-2-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="assets/images/hero-slider/slide-2-mobile.webp 1x, assets/images/hero-slider/slide-2-mobile@2x.webp 2x">
+              <source media="(min-width: 1280px)" srcset="assets/images/hero-slider/slide-2-desktop.jpg 1x, assets/images/hero-slider/slide-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="assets/images/hero-slider/slide-2-tablet.jpg 1x, assets/images/hero-slider/slide-2-tablet@2x.jpg 2x">
+              <img class="hero__slider-photo" src="assets/images/hero-slider/slide-2-mobile.jpg" srcset="assets/images/hero-slider/slide-2-mobile@2x.jpg 2x" width="1920" height="1080" alt="">
+            </picture>
           </div>
           <div class="hero__slider-item">
-            <img class="hero__slider-photo" src="assets/images/hero-slider/slide-3.jpg" alt="">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="assets/images/hero-slider/slide-3-desktop.webp 1x, assets/images/hero-slider/slide-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="assets/images/hero-slider/slide-3-tablet.webp 1x, assets/images/hero-slider/slide-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="assets/images/hero-slider/slide-3-mobile.webp 1x, assets/images/hero-slider/slide-3-mobile@2x.webp 2x">
+              <source media="(min-width: 1280px)" srcset="assets/images/hero-slider/slide-3-desktop.jpg 1x, assets/images/hero-slider/slide-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="assets/images/hero-slider/slide-3-tablet.jpg 1x, assets/images/hero-slider/slide-3-tablet@2x.jpg 2x">
+              <img class="hero__slider-photo" src="assets/images/hero-slider/slide-3-mobile.jpg" srcset="assets/images/hero-slider/slide-3-mobile@2x.jpg 2x" width="1920" height="1080" alt="">
+            </picture>
           </div>
         </div>
 
@@ -124,7 +145,14 @@
             </div>
 
             <div class="about__image-wrapper">
-              <img src="assets/images/about-image.jpg" width="1334" height="1001" alt="Изображение того, как мастер сосредоточенно делает тату на руке клиента.">
+              <picture>
+                <source type="image/webp" media="(min-width: 999px)" srcset="assets/images/about-image-desktop.webp 1x, assets/images/about-image-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/about-image-tablet.webp 1x, assets/images/about-image-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="assets/images/about-image-mobile.webp 1x, assets/images/about-image-mobile@2x.webp 2x">
+                <source media="(min-width: 999px)" srcset="assets/images/about-image-desktop.jpg 1x, assets/images/about-image-desktop@2x.jpg 2x">
+                <source media="(min-width: 600px)" srcset="assets/images/about-image-tablet.jpg 1x, assets/images/about-image-tablet@2x.jpg 2x">
+                <img src="assets/images/about-image-mobile.jpg" srcset="assets/images/about-image-mobile@2x.jpg 2x" width="800" height="600" alt="Изображение того, как мастер сосредоточенно делает тату на руке клиента.">
+              </picture>
             </div>
           </div><!-- /.about -->
         </div><!-- /.container -->
@@ -211,7 +239,14 @@
                     <div class="photos__master">Мастер: <span>Дарья Казанцева</span></div>
                     <div class="photos__style">Стиль: <span>Флористика</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-1.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-1-desktop.webp 1x, assets/images/gallery/gallery-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-1-tablet.webp 1x, assets/images/gallery/gallery-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-1-mobile.webp 1x, assets/images/gallery/gallery-1-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-1-desktop.jpg 1x, assets/images/gallery/gallery-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-1-tablet.jpg 1x, assets/images/gallery/gallery-1-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-1-mobile.jpg" srcset="assets/images/gallery/gallery-1-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -222,7 +257,14 @@
                     <div class="photos__master">Мастер: <span>Мария Кацер</span></div>
                     <div class="photos__style">Стиль: <span>Графика</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-2.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-2-desktop.webp 1x, assets/images/gallery/gallery-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-2-tablet.webp 1x, assets/images/gallery/gallery-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-2-mobile.webp 1x, assets/images/gallery/gallery-2-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-2-desktop.jpg 1x, assets/images/gallery/gallery-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-2-tablet.jpg 1x, assets/images/gallery/gallery-2-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-2-mobile.jpg" srcset="assets/images/gallery/gallery-2-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -233,7 +275,14 @@
                     <div class="photos__master">Мастер: <span>Алексей Евгеньев</span></div>
                     <div class="photos__style">Стиль: <span>Блэк ворк</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-3.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-3-desktop.webp 1x, assets/images/gallery/gallery-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-3-tablet.webp 1x, assets/images/gallery/gallery-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-3-mobile.webp 1x, assets/images/gallery/gallery-3-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-3-desktop.jpg 1x, assets/images/gallery/gallery-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-3-tablet.jpg 1x, assets/images/gallery/gallery-3-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-3-mobile.jpg" srcset="assets/images/gallery/gallery-3-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -244,7 +293,14 @@
                     <div class="photos__master">Мастер: <span>Алексей Евгеньев</span></div>
                     <div class="photos__style">Стиль: <span>Полинезия</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-4.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-4-desktop.webp 1x, assets/images/gallery/gallery-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-4-tablet.webp 1x, assets/images/gallery/gallery-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-4-mobile.webp 1x, assets/images/gallery/gallery-4-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-4-desktop.jpg 1x, assets/images/gallery/gallery-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-4-tablet.jpg 1x, assets/images/gallery/gallery-4-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-4-mobile.jpg" srcset="assets/images/gallery/gallery-4-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -255,7 +311,14 @@
                     <div class="photos__master">Мастер: <span>Евгений Финский</span></div>
                     <div class="photos__style">Стиль: <span>Япония</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-5.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-5-desktop.webp 1x, assets/images/gallery/gallery-5-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-5-tablet.webp 1x, assets/images/gallery/gallery-5-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-5-mobile.webp 1x, assets/images/gallery/gallery-5-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-5-desktop.jpg 1x, assets/images/gallery/gallery-5-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-5-tablet.jpg 1x, assets/images/gallery/gallery-5-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-5-mobile.jpg" srcset="assets/images/gallery/gallery-5-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -266,7 +329,14 @@
                     <div class="photos__master">Мастер: <span>Евгений Финский</span></div>
                     <div class="photos__style">Стиль: <span>Олд скул</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-6.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-6-desktop.webp 1x, assets/images/gallery/gallery-6-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-6-tablet.webp 1x, assets/images/gallery/gallery-6-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-6-mobile.webp 1x, assets/images/gallery/gallery-6-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-6-desktop.jpg 1x, assets/images/gallery/gallery-6-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-6-tablet.jpg 1x, assets/images/gallery/gallery-6-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-6-mobile.jpg" srcset="assets/images/gallery/gallery-6-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -277,7 +347,14 @@
                     <div class="photos__master">Мастер: <span>Дарья Казанцева</span></div>
                     <div class="photos__style">Стиль: <span>Флористика</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-7.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-7-desktop.webp 1x, assets/images/gallery/gallery-7-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-7-tablet.webp 1x, assets/images/gallery/gallery-7-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-7-mobile.webp 1x, assets/images/gallery/gallery-7-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-7-desktop.jpg 1x, assets/images/gallery/gallery-7-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-7-tablet.jpg 1x, assets/images/gallery/gallery-7-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-7-mobile.jpg" srcset="assets/images/gallery/gallery-7-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -288,7 +365,14 @@
                     <div class="photos__master">Мастер: <span>Дарья Казанцева</span></div>
                     <div class="photos__style">Стиль: <span>Барокко</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-8.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-8-desktop.webp 1x, assets/images/gallery/gallery-8-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-8-tablet.webp 1x, assets/images/gallery/gallery-8-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-8-mobile.webp 1x, assets/images/gallery/gallery-8-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-8-desktop.jpg 1x, assets/images/gallery/gallery-8-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-8-tablet.jpg 1x, assets/images/gallery/gallery-8-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-8-mobile.jpg" srcset="assets/images/gallery/gallery-8-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -299,7 +383,14 @@
                     <div class="photos__master">Мастер: <span>Мария Кацер</span></div>
                     <div class="photos__style">Стиль: <span>Минимализм</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-9.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-9-desktop.webp 1x, assets/images/gallery/gallery-9-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-7-tablet.webp 1x, assets/images/gallery/gallery-9-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-9-mobile.webp 1x, assets/images/gallery/gallery-9-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-9-desktop.jpg 1x, assets/images/gallery/gallery-9-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-9-tablet.jpg 1x, assets/images/gallery/gallery-9-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-9-mobile.jpg" srcset="assets/images/gallery/gallery-9-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -310,7 +401,14 @@
                     <div class="photos__master">Мастер: <span>Евгений Финский</span></div>
                     <div class="photos__style">Стиль: <span>Олд скул</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-10.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-10-desktop.webp 1x, assets/images/gallery/gallery-10-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-10-tablet.webp 1x, assets/images/gallery/gallery-10-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-10-mobile.webp 1x, assets/images/gallery/gallery-10-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-10-desktop.jpg 1x, assets/images/gallery/gallery-10-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-10-tablet.jpg 1x, assets/images/gallery/gallery-10-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-10-mobile.jpg" srcset="assets/images/gallery/gallery-10-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -321,7 +419,14 @@
                     <div class="photos__master">Мастер: <span>Мария Кацер</span></div>
                     <div class="photos__style">Стиль: <span>Минимализм</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-11.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-11-desktop.webp 1x, assets/images/gallery/gallery-11-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-11-tablet.webp 1x, assets/images/gallery/gallery-11-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-11-mobile.webp 1x, assets/images/gallery/gallery-11-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-11-desktop.jpg 1x, assets/images/gallery/gallery-11-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-11-tablet.jpg 1x, assets/images/gallery/gallery-11-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-11-mobile.jpg" srcset="assets/images/gallery/gallery-11-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
 
@@ -332,7 +437,14 @@
                     <div class="photos__master">Мастер: <span>Мария Кацер</span></div>
                     <div class="photos__style">Стиль: <span>Графика</span></div>
                   </div>
-                  <img class="photos__image" src="assets/images/gallery/gallery-12.jpg" width="274" height="342" alt="">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 767px)" srcset="assets/images/gallery/gallery-12-desktop.webp 1x, assets/images/gallery/gallery-12-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/gallery/gallery-12-tablet.webp 1x, assets/images/gallery/gallery-12-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/gallery/gallery-12-mobile.webp 1x, assets/images/gallery/gallery-12-mobile@2x.webp 2x">
+                    <source media="(min-width: 767px)" srcset="assets/images/gallery/gallery-12-desktop.jpg 1x, assets/images/gallery/gallery-12-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/gallery/gallery-12-tablet.jpg 1x, assets/images/gallery/gallery-12-tablet@2x.jpg 2x">
+                    <img class="photos__image" src="assets/images/gallery/gallery-12-mobile.jpg" srcset="assets/images/gallery/gallery-12-mobile@2x.jpg 2x" width="278" height="416" alt="">
+                  </picture>
                 </a>
               </li>
             </ul><!-- /.gallery__photos -->
@@ -434,7 +546,14 @@
             <ul class="team__list">
               <li class="team__item" data-aos="fade-in">
                 <a class="team__link" href="#!">
-                  <img class="team__image" src="assets/images/team/team-1.jpg" width="263" height="405" alt="Фото Алексея Евгеньева.">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 999px)" srcset="assets/images/team/team-1-desktop.webp 1x, assets/images/team/team-1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/team/team-1-tablet.webp 1x, assets/images/team/team-1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/team/team-1-mobile.webp 1x, assets/images/team/team-1-mobile@2x.webp 2x">
+                    <source media="(min-width: 999px)" srcset="assets/images/team/team-1-desktop.jpg 1x, assets/images/team/team-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/team/team-1-tablet.jpg 1x, assets/images/team/team-1-tablet@2x.jpg 2x">
+                    <img class="team__image" src="assets/images/team/team-1-mobile.jpg" srcset="assets/images/team/team-1-mobile@2x.jpg 2x" width="393" height="609" alt="Фото Алексея Евгеньева.">
+                  </picture>
                 </a>
 
                 <div class="team__content">
@@ -474,7 +593,14 @@
 
               <li class="team__item" data-aos="fade-in" data-aos-delay="100">
                 <a class="team__link" href="#!">
-                  <img class="team__image" src="assets/images/team/team-2.jpg" width="263" height="405" alt="Фото Марии Кацер.">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 999px)" srcset="assets/images/team/team-2-desktop.webp 1x, assets/images/team/team-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/team/team-2-tablet.webp 1x, assets/images/team/team-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/team/team-2-mobile.webp 1x, assets/images/team/team-2-mobile@2x.webp 2x">
+                    <source media="(min-width: 999px)" srcset="assets/images/team/team-2-desktop.jpg 1x, assets/images/team/team-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/team/team-2-tablet.jpg 1x, assets/images/team/team-2-tablet@2x.jpg 2x">
+                    <img class="team__image" src="assets/images/team/team-2-mobile.jpg" srcset="assets/images/team/team-2-mobile@2x.jpg 2x" width="393" height="609" alt="Фото Марии Кацер.">
+                  </picture>
                 </a>
 
                 <div class="team__content">
@@ -514,7 +640,14 @@
 
               <li class="team__item" data-aos="fade-in" data-aos-delay="200">
                 <a class="team__link" href="#!">
-                  <img class="team__image" src="assets/images/team/team-3.jpg" width="263" height="405" alt="Фото Евгения Финского.">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 999px)" srcset="assets/images/team/team-3-desktop.webp 1x, assets/images/team/team-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/team/team-3-tablet.webp 1x, assets/images/team/team-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/team/team-3-mobile.webp 1x, assets/images/team/team-3-mobile@2x.webp 2x">
+                    <source media="(min-width: 999px)" srcset="assets/images/team/team-3-desktop.jpg 1x, assets/images/team/team-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/team/team-3-tablet.jpg 1x, assets/images/team/team-3-tablet@2x.jpg 2x">
+                    <img class="team__image" src="assets/images/team/team-3-mobile.jpg" srcset="assets/images/team/team-3-mobile@2x.jpg 2x" width="393" height="609" alt="Фото Евгения Финского.">
+                  </picture>
                 </a>
 
                 <div class="team__content">
@@ -554,7 +687,14 @@
 
               <li class="team__item" data-aos="fade-in" data-aos-delay="400">
                 <a class="team__link" href="#!">
-                  <img class="team__image" src="assets/images/team/team-4.jpg" width="263" height="405" alt="Фото Дарьи Казанцевой.">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 999px)" srcset="assets/images/team/team-4-desktop.webp 1x, assets/images/team/team-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/team/team-4-tablet.webp 1x, assets/images/team/team-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="assets/images/team/team-4-mobile.webp 1x, assets/images/team/team-4-mobile@2x.webp 2x">
+                    <source media="(min-width: 999px)" srcset="assets/images/team/team-4-desktop.jpg 1x, assets/images/team/team-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 600px)" srcset="assets/images/team/team-4-tablet.jpg 1x, assets/images/team/team-4-tablet@2x.jpg 2x">
+                    <img class="team__image" src="assets/images/team/team-4-mobile.jpg" srcset="assets/images/team/team-4-mobile@2x.jpg 2x" width="393" height="609" alt="Фото Дарьи Казанцевой.">
+                  </picture>
                 </a>
 
                 <div class="team__content">
@@ -713,7 +853,10 @@
             </div><!-- /.faq__wrapper -->
 
             <div class="faq__image-wrapper">
-              <img class="faq__image" src="assets/images/faq-image.jpg" width="468" height="565" alt="Фото девушки в желтом свитере с тату на плече.">
+              <picture>
+                <source type="image/webp" media="(min-width: 999px)" srcset="assets/images/faq-image-desktop.webp 1x, assets/images/faq-image-desktop@2x.webp 2x">
+                <img class="faq__image" src="assets/images/faq-image-desktop.jpg" srcset="assets/images/faq-image-desktop@2x.jpg 2x" width="468" height="565" alt="Фото девушки в желтом свитере с тату на плече.">
+              </picture>
             </div>
           </div><!-- /.faq -->
         </div><!-- /.container -->
@@ -751,7 +894,15 @@
           <div class="articles">
             <ul class="articles__list">
               <li class="articles__item" data-aos="fade-in">
-                <img class="articles__image" src="assets/images/blog/blog1.jpg" width="262" height="153" alt="Фото женских рук с забитым рукавом, обнимающих книгу.">
+                <picture>
+                  <source type="image/webp" media="(min-width: 999px)" srcset="assets/images/blog/blog-1-desktop.webp 1x, assets/images/blog/blog-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/blog/blog-1-tablet.webp 1x, assets/images/blog/blog-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="assets/images/blog/blog-1-mobile.webp 1x, assets/images/blog/blog-1-mobile@2x.webp 2x">
+                  <source media="(min-width: 999px)" srcset="assets/images/blog/blog-1-desktop.jpg 1x, assets/images/blog/blog-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 600px)" srcset="assets/images/blog/blog-1-tablet.jpg 1x, assets/images/blog/blog-1-tablet@2x.jpg 2x">
+                  <img class="articles__image" src="assets/images/blog/blog-1-mobile.jpg" srcset="assets/images/blog/blog-1-mobile@2x.jpg 2x" width="396" height="200" alt="Фото женских рук с забитым рукавом, обнимающих книгу.">
+                </picture>
+
                 <div class="articles__content">
                   <div class="articles__data">
                     <time class="articles__date" datetime="2023-08-02 19:00">02 августа, 2023</time>
@@ -779,7 +930,16 @@
               </li>
 
               <li class="articles__item" data-aos="fade-in" data-aos-delay="100">
-                <img class="articles__image" src="assets/images/blog/blog2.jpg" width="262" height="153" alt="Фото мужчины и женщины в татуировках, стоящих спинами друг к другу.">
+                <picture>
+                  <source type="image/webp" media="(min-width: 999px)" srcset="assets/images/blog/blog-2-desktop.webp 1x, assets/images/blog/blog-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 600px)" srcset="assets/images/blog/blog-2-tablet.webp 1x, assets/images/blog/blog-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="assets/images/blog/blog-2-mobile.webp 1x, assets/images/blog/blog-2-mobile@2x.webp 2x">
+                  <source media="(min-width: 999px)" srcset="assets/images/blog/blog-2-desktop.jpg 1x, assets/images/blog/blog-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 600px)" srcset="assets/images/blog/blog-2-tablet.jpg 1x, assets/images/blog/blog-2-tablet@2x.jpg 2x">
+                  <img class="articles__image" src="assets/images/blog/blog-2-mobile.jpg" srcset="assets/images/blog/blog-2-mobile@2x.jpg 2x" width="396" height="200" alt="Фото мужчины и женщины в татуировках, стоящих спинами друг к другу.">
+                </picture>
+                <!-- <img class="articles__image" src="assets/images/blog/blog2.jpg" width="262" height="153" alt="Фото мужчины и женщины в татуировках, стоящих спинами друг к другу."> -->
+
                 <div class="articles__content">
                   <div class="articles__data">
                     <time class="articles__date" datetime="2023-07-23 19:00">23 июля, 2023</time>
