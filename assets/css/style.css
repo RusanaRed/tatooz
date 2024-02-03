@@ -48,6 +48,10 @@ img {
   text-align: center;
 }
 
+.hide {
+  display: none;
+}
+
 
 /* Visually hidden */
 .visually-hidden {
@@ -656,6 +660,8 @@ body.nav-show .header {
 .filters-form__button:not(.filters-form__button--active):hover {
   background-color: #ffffff;
   color: #fb9902;
+
+  transition: color 0.1s linear;
 }
 
 .filters-form__button--active {

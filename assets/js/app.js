@@ -70,6 +70,38 @@ $(function() {
     }, 500)
   });
 
+  
+  /* Gallery filters
+  ================================================*/
+
+  let filter = $("[data-filter]");
+  let photo = $("[data-cat]");
+
+  filter.on("click", function(event) {
+    event.preventDefault();
+
+    let category = $(this).data('filter');
+
+    filter.each(function() {
+      $(this).removeClass('filters-form__button--active');
+    });
+    $(this).addClass('filters-form__button--active');
+
+    if (category == 'all') {
+      photo.removeClass('hide');
+    } else {
+      photo.each(function() {
+        let photoCategory = $(this).data('cat');
+  
+        if (photoCategory != category) {
+          $(this).addClass('hide');
+        } else {
+          $(this).removeClass('hide');
+        }
+      });
+    } 
+  });
+
 
   /* ScrollSpy
   ================================================*/
@@ -213,5 +245,8 @@ $(function() {
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
   });
+
+
+  
 
 });

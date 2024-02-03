@@ -224,15 +224,15 @@
 
           <div class="gallery">
             <form class="gallery__filters-form filters-form" action="index.html" method="get" autocomplete="off">
-              <button class="filters-form__button filters-form__button--active button button--small" id="filter-default">Все</button>
-              <button class="filters-form__button button button--small" id="filter-body">Тату на теле</button>
-              <button class="filters-form__button button button--small" id="filter-hands">Тату на руках</button>
-              <button class="filters-form__button button button--small" id="filter-legs">Тату на ногах</button>
-              <button class="filters-form__button button button--small" id="filter-head">Тату на голове</button>
+              <button class="filters-form__button filters-form__button--active button button--small" id="filter-all" data-filter="all">Все</button>
+              <button class="filters-form__button button button--small" id="filter-body" data-filter="body">Тату на теле</button>
+              <button class="filters-form__button button button--small" id="filter-hand" data-filter="hand">Тату на руках</button>
+              <button class="filters-form__button button button--small" id="filter-leg" data-filter="leg">Тату на ногах</button>
+              <button class="filters-form__button button button--small" id="filter-head" data-filter="head">Тату на голове</button>
             </form>
 
             <ul class="gallery__photos photos">
-              <li class="photos__item" data-aos="fade-in">
+              <li class="photos__item" data-cat="hand" data-aos="fade-in">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка пионы</h4>
@@ -250,7 +250,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="50">
+              <li class="photos__item" data-cat="body" data-aos="fade-in" data-aos-delay="50">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка цветочный человек</h4>
@@ -268,7 +268,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="100">
+              <li class="photos__item" data-cat="body" data-aos="fade-in" data-aos-delay="100">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка полинезия</h4>
@@ -286,7 +286,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="150">
+              <li class="photos__item" data-cat="hand" data-aos="fade-in" data-aos-delay="150">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка молотоголовая акула</h4>
@@ -304,7 +304,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in">
+              <li class="photos__item" data-cat="body" data-aos="fade-in">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка кот-самурай</h4>
@@ -322,7 +322,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="50">
+              <li class="photos__item" data-cat="body" data-aos="fade-in" data-aos-delay="50">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка роза и кинжал</h4>
@@ -340,7 +340,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="100">
+              <li class="photos__item" data-cat="hand" data-aos="fade-in" data-aos-delay="100">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка пионы и дракон</h4>
@@ -358,7 +358,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="150">
+              <li class="photos__item" data-cat="leg" data-aos="fade-in" data-aos-delay="150">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка цветы</h4>
@@ -376,7 +376,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in">
+              <li class="photos__item" data-cat="hand" data-aos="fade-in">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка другая планета</h4>
@@ -394,7 +394,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="50">
+              <li class="photos__item" data-cat="hand" data-aos="fade-in" data-aos-delay="50">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка вигвам</h4>
@@ -412,7 +412,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="100">
+              <li class="photos__item" data-cat="body" data-aos="fade-in" data-aos-delay="100">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка лев</h4>
@@ -430,7 +430,7 @@
                 </a>
               </li>
 
-              <li class="photos__item" data-aos="fade-in" data-aos-delay="150">
+              <li class="photos__item" data-cat="body" data-aos="fade-in" data-aos-delay="150">
                 <a class="photos__link" href="#!">
                   <div class="photos__info">
                     <h4 class="photos__title">Татуировка ловец снов</h4>
