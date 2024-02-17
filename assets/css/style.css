@@ -2467,6 +2467,11 @@ only screen and (min-resolution: 240dpi) {
     width: 100%;
   }
 
+  /* Accordion */
+  .accordion__title {
+    font-size: 13px;
+  }
+
   /* Consultation */
   .consultation {
     padding: 50px 0;
