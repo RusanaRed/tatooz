@@ -409,7 +409,7 @@ body.nav-show .header {
 
 .hero__inner {
   position: absolute;
-  top: calc(50% + 40px);
+  top: calc(50% + 10px);
   z-index: 2;
   transform: translatey(-50%);
   
@@ -422,7 +422,7 @@ body.nav-show .header {
 }
 
 .hero__slogan {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   color: #fb9902;
   font-family: 'Montserrat', sans-serif;
@@ -433,7 +433,7 @@ body.nav-show .header {
 
 .hero__text {
   max-width: 560px;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   
   color: #ffffff;
   font-size: 16px;
