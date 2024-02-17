@@ -1284,7 +1284,7 @@ only screen and (min-resolution: 240dpi) {
 
   padding: 90px 0 70px;
 
-  background: #000 url("../images/consultation-image.jpg") no-repeat center;
+  background: #000 url("../images/consultation-image-desktop.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -2007,6 +2007,11 @@ only screen and (min-resolution: 240dpi) {
     height: 500px;
   }
 
+  /* Consultation */
+  .consultation {
+    background-image: url("../images/consultation-image-tablet.jpg");
+  }
+
   /* Articles */
   .articles__list {
     /* flex-wrap: wrap; */
@@ -2152,11 +2157,12 @@ only screen and (min-resolution: 240dpi) {
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-moz-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 240dpi) {
-  .promo { 
-    background-image: url("../images/promo-image-tablet@2x.jpg");
-    background-size: cover; 
+
+    .promo { 
+      background-image: url("../images/promo-image-tablet@2x.jpg");
+      background-size: cover; 
+    }
   }
-}
 
   .promo__content {
     max-width: 80%;
@@ -2193,6 +2199,11 @@ only screen and (min-resolution: 240dpi) {
 
   .faq__image-wrapper {
     display: none;
+  }
+
+  /* Consultation */
+  .consultation {
+    padding: 60px 0;
   }
 
   /* Articles */
@@ -2309,8 +2320,7 @@ only screen and (min-resolution: 240dpi) {
 
   /* Consultation */
   .consultation {
-    padding: 60px 0;
-    background-position: right 30% center;
+    background-image: url("../images/consultation-image-mobile.jpg");
   }
 
   /* Consultation-form */
@@ -2414,9 +2424,11 @@ only screen and (min-resolution: 240dpi) {
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
   only screen and (min-moz-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 240dpi) {
-  .promo { 
-    background-image: url("../images/promo-image-mobile@2x.jpg");
-    background-size: cover; 
+
+    .promo { 
+      background-image: url("../images/promo-image-mobile@2x.jpg");
+      background-size: cover; 
+    }
   }
 
   .promo__content {
@@ -2458,7 +2470,6 @@ only screen and (min-resolution: 240dpi) {
   /* Consultation */
   .consultation {
     padding: 50px 0;
-    background-position: right 37% center;
   }
 
   /* Form */
@@ -2614,14 +2625,17 @@ only screen and (min-resolution: 240dpi) {
   }
 
   .consultation__wrapper {
-    justify-content: center;
+    text-align: center;
   }
 
   /* Consultation-form */
   .consultation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 100%;
     padding-left: 0;
-    text-align: center;
   }
 
   /* Articles */
