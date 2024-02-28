@@ -1644,6 +1644,15 @@ only screen and (min-resolution: 240dpi) {
   display: block;
   width: 100%;
   height: 100%;
+  background: #333;
+}
+
+.map [class*="copyrights-pane"] {
+  display: none;
+}
+
+.map [class*="ground-pane"] {
+  filter: grayscale(80%);
 }
 
 

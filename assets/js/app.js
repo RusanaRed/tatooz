@@ -144,6 +144,37 @@ $(function() {
   });
 
 
+  /* Yandex map
+  ================================================*/
+
+  const center = [59.9339198155389,30.35840941168666];
+  const mark = [59.93409211022794,30.36044789053799];
+  
+  function init() {
+    let map = new ymaps.Map('map', {
+      center: center,
+      zoom: 17,
+    });
+
+    let placemark = new ymaps.Placemark(mark, {}, {
+      iconLayout: 'default#image',
+      iconImageHref: 'assets/images/icons/placemark-icon.svg',
+      iconImageSize: [50, 50],
+      iconImageOffset: [-20, -20]
+    });
+
+    map.controls.remove('searchControl');
+    map.controls.remove('geolocationControl');
+    map.controls.remove('trafficControl');
+    map.controls.remove('typeSelector');
+    map.behaviors.disable(['scrollZoom']);
+
+    map.geoObjects.add(placemark);
+  }
+
+  ymaps.ready(init);
+
+
   /* Modals
   ================================================*/
 
