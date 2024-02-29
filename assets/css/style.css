@@ -1886,7 +1886,7 @@ only screen and (min-resolution: 240dpi) {
 .modal__content {
   padding: 70px 80px;
 
-  background-image: url("./../images/7.jpg.webp");
+  background-image: url("./../images/consultation-image-desktop.jpg");
   background-repeat: no-repeat;
   background-position: left -350px top -40px;
   border: 1px solid #fff;
