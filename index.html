@@ -223,13 +223,12 @@
           <p class="section__suptitle">Наши мастера могут сделать тату в любом стиле <br>и у каждого в запасе всегда есть горячие эскизы</p>
 
           <div class="gallery">
-            <form class="gallery__filters-form filters-form" action="index.html" method="get" autocomplete="off">
-              <button class="filters-form__button filters-form__button--active button button--small" id="filter-all" data-filter="all">Все</button>
-              <button class="filters-form__button button button--small" id="filter-body" data-filter="body">Тату на теле</button>
-              <button class="filters-form__button button button--small" id="filter-hand" data-filter="hand">Тату на руках</button>
-              <button class="filters-form__button button button--small" id="filter-leg" data-filter="leg">Тату на ногах</button>
-              <button class="filters-form__button button button--small" id="filter-head" data-filter="head">Тату на голове</button>
-            </form>
+            <div class="gallery__filters gallery-filters">
+              <button class="gallery-filters__button gallery-filters__button--active button button--small" id="filter-all" data-filter="all">Все</button>
+              <button class="gallery-filters__button button button--small" id="filter-body" data-filter="body">Тату на теле</button>
+              <button class="gallery-filters__button button button--small" id="filter-hand" data-filter="hand">Тату на руках</button>
+              <button class="gallery-filters__button button button--small" id="filter-leg" data-filter="leg">Тату на ногах</button>
+            </div>
 
             <ul class="gallery__photos photos">
               <li class="photos__item" data-cat="hand" data-aos="fade-in">

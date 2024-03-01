@@ -632,7 +632,7 @@ body.nav-show .header {
 
 
 /* Gallery */
-.gallery__filters-form {
+.gallery__filters {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -652,15 +652,15 @@ body.nav-show .header {
 }
 
 
-/* Filters-form */
-.filters-form__button:not(.filters-form__button--active):hover {
+/* Gallery-filters */
+.gallery-filters__button:not(.gallery-filters__button--active):hover {
   background-color: #ffffff;
   color: #fb9902;
 
   transition: color 0.1s linear;
 }
 
-.filters-form__button--active {
+.gallery-filters__button--active {
   margin-left: 0;
 
   background-color: #fb9902;

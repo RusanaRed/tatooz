@@ -83,9 +83,9 @@ $(function() {
     let category = $(this).data('filter');
 
     filter.each(function() {
-      $(this).removeClass('filters-form__button--active');
+      $(this).removeClass('gallery-filters__button--active');
     });
-    $(this).addClass('filters-form__button--active');
+    $(this).addClass('gallery-filters__button--active');
 
     if (category == 'all') {
       photo.removeClass('hide');
