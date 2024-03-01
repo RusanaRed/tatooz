@@ -95,8 +95,9 @@ img {
   padding: 10px 30px;
 
   background-color: #ffffff;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 3px;
+  outline: 1px solid transparent;
   cursor: pointer;
 
   color: #222222;
@@ -109,7 +110,7 @@ img {
   text-align: center;
   letter-spacing: 0.3px;
 
-  transition: color 0.3s linear, background 0.3s linear, outline 0.2s linear;
+  transition: color 0.3s linear, background-color 0.3s linear, outline 0.2s linear;
 }
 
 .button:hover {
@@ -2724,6 +2725,7 @@ only screen and (min-resolution: 240dpi) {
 
   .about__button {
     display: block;
+    width: 100%;
   }
 
 
