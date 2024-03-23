@@ -113,7 +113,17 @@ img {
   transition: color 0.3s linear, background-color 0.3s linear, outline 0.2s linear;
 }
 
+.button:focus-visible {
+  border: 1px solid #ffffff;
+  outline: 2px solid #fb9902;
+}
+
 .button:hover {
+  background-color: #fb9902;
+  color: #ffffff;
+}
+
+.button:active {
   background-color: #fb9902;
   color: #ffffff;
 }
@@ -128,6 +138,12 @@ img {
   color: #222222;
 }
 
+.button--primary:active {
+  color: #fb9902;
+  border: 1px solid #fb9902;
+  outline: 1px solid #fb9902;
+}
+
 .button--secondary {
   background-color: transparent;
   border: 1px solid #fb9902;
@@ -138,6 +154,10 @@ img {
 .button--secondary:hover {
   background-color: transparent;
   outline: 1px solid #fb9902;
+}
+
+.button--secondary:active {
+  color: #fb9902;
 }
 
 .button--small {
@@ -207,11 +227,21 @@ body.nav-show .header {
   transition: color 0.2s linear;
 }
 
-.navigation__link.active {
-  color: #fb9902;
+.navigation__link:focus-visible {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 2px;
 }
 
 .navigation__link:hover {
+  color: #fb9902;
+}
+
+.navigation__link:active {
+  color: #fb9902;
+}
+
+.navigation__link.active {
   color: #fb9902;
 }
 
@@ -235,6 +265,12 @@ body.nav-show .header {
 .logo {
   margin: 0;
   margin-right: 40px;
+}
+
+.logo:focus-visible {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 5px;
 }
 
 
@@ -677,6 +713,10 @@ body.nav-show .header {
   padding: 0 10px;
 }
 
+.photos__link:focus-visible {
+  outline: 2px solid #fb9902;
+}
+
 .photos__link:hover .photos__info {
   opacity: 1;
 }
@@ -747,8 +787,7 @@ body.nav-show .header {
   justify-content: space-between;
 
   width: 365px;
-  padding: 40px 40px 40px;
-
+  
   background-color: #0d0f11;
   text-align: center;
 }
@@ -758,7 +797,14 @@ body.nav-show .header {
   flex-direction: column;
   align-items: center;
 
+  height: 100%;
+  padding: 40px 40px 40px;
+
   text-decoration: none;
+}
+
+.services__link:focus-visible {
+  outline: 2px solid #fb9902;
 }
 
 .services__link:hover .services__title {
@@ -938,6 +984,10 @@ only screen and (min-resolution: 240dpi) {
   background-color: #0d0f11;
 }
 
+.team__link:focus-visible {
+  outline: 2px solid #fb9902;
+}
+
 .team__link:hover .team__image {
   transform: scale(1.1);
   transition-duration: 3s;
@@ -979,7 +1029,7 @@ only screen and (min-resolution: 240dpi) {
 
 .team__social {
   max-width: 105px;
-  margin-top: 25px;
+  margin-top: 27px;
 }
 
 
@@ -1002,11 +1052,17 @@ only screen and (min-resolution: 240dpi) {
   transition: color 0.2s linear;
 }
 
+.social__link:focus-visible {
+  outline: none;
+  color: #fb9902;
+}
+
 .social__link:hover {
   color: #fb9902;
 }
 
 .social__icon {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -1237,6 +1293,14 @@ only screen and (min-resolution: 240dpi) {
   appearance: none;
 }
 
+.accordion__input:focus-visible {
+  outline: none;
+}
+
+.accordion__input:focus-visible ~ .accordion__title {
+  outline: 2px solid #fb9902;
+}
+
 .accordion__input:checked ~ .accordion__title {
   background-color: #fb9902;
 }
@@ -1374,12 +1438,13 @@ only screen and (min-resolution: 240dpi) {
 
 .form__control:focus-visible + .form__mark,
 .form__control:active + .form__mark {
-  box-shadow: 0 0 3px 1px #3898ec;
+  border-color: #fb9902;
+  box-shadow: 0 0 3px 1px #fb9902;
 }
 
 /* .form__control:disabled + .form__mark {
-  background-color: #e1e0e0;
-  border-color: #d4d3d3;
+  background-color: #676767;
+  border-color: #222222;
 }
 
 .form__control:disabled + .form__mark:hover {
@@ -1409,6 +1474,12 @@ only screen and (min-resolution: 240dpi) {
 .form__link {
   color: #fb9902;
   text-decoration: none;
+}
+
+.form__link:focus-visible {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 1px;
 }
 
 .form__link:hover {
@@ -1554,6 +1625,12 @@ only screen and (min-resolution: 240dpi) {
   text-decoration: none;
 }
 
+.articles__comments:focus-visible {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 3px;
+}
+
 .articles__comments:hover {
   color: #fb9902;
 }
@@ -1567,23 +1644,29 @@ only screen and (min-resolution: 240dpi) {
   padding-left: 3px;
 }
 
-.articles__title {
+.articles__link {
   margin-bottom: 20px;
 
+  color: inherit;
+  text-decoration: none;
+}
+
+.articles__link:focus-visible  {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 3px;
+}
+
+.articles__link:hover {
+  text-decoration: underline;
+}
+
+.articles__title {
   color: #fb9902;
   font-family: 'Montserrat', sans-serif;
   font-size: 17px;
   line-height: 1.1;
   font-weight: 700;
-}
-
-.articles__title:hover {
-  text-decoration: underline;
-}
-
-.articles__title a {
-  color: inherit;
-  text-decoration: none;
 }
 
 .articles__text {
@@ -1622,6 +1705,12 @@ only screen and (min-resolution: 240dpi) {
 
   color: inherit;
   text-decoration: none;
+}
+
+.articles__read-link:focus-visible {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 3px;
 }
 
 .articles__read-icon {
@@ -1734,6 +1823,19 @@ only screen and (min-resolution: 240dpi) {
   background-repeat: no-repeat;
 }
 
+.contacts__tel:focus-visible,
+.contacts__email:focus-visible  {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 3px;
+}
+
+.contacts__tel:hover,
+.contacts__email:hover  {
+  color: #fb9902;
+  transition: color 0.2s linear;
+}
+
 .contacts__work-time {
   background-image: url("../images/icons/time-icon.svg");
   background-repeat: no-repeat;
@@ -1796,6 +1898,12 @@ only screen and (min-resolution: 240dpi) {
   text-decoration: none;
 }
 
+.footer__policy-link:focus-visible  {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 3px;
+}
+
 .footer__policy-link:hover {
   text-decoration: underline;
 }
@@ -1813,6 +1921,12 @@ only screen and (min-resolution: 240dpi) {
 .footer__link {
   color: inherit;
   text-decoration: none;
+}
+
+.footer__link:focus-visible  {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 3px;
 }
 
 .footer__link:hover {
@@ -2506,9 +2620,7 @@ only screen and (min-resolution: 240dpi) {
 
   /* Map */
   .map {
-    
     order: 2;
-
   }
 
   /* Contacts */
