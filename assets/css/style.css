@@ -984,6 +984,9 @@ only screen and (min-resolution: 240dpi) {
 }
 
 .team__item {
+  display: flex;
+  flex-direction: column;
+
   width: 25%;
   padding: 0 15px;
 
@@ -1018,6 +1021,9 @@ only screen and (min-resolution: 240dpi) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  
   padding: 25px 20px;
 
   background-color: #0d0f11;
