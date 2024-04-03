@@ -1023,7 +1023,7 @@ only screen and (min-resolution: 240dpi) {
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  
+
   padding: 25px 20px;
 
   background-color: #0d0f11;
@@ -1586,6 +1586,7 @@ only screen and (min-resolution: 240dpi) {
   position: relative;
   display: flex;
   flex-direction: column;
+
   height: 100%;
   padding: 10px 20px 30px;
 }
@@ -1700,12 +1701,19 @@ only screen and (min-resolution: 240dpi) {
   position: relative;
   display: flex;
   justify-content: flex-end;
+  align-self: flex-end;
 
   color: #ffffff;
   font-size: 14px;
   line-height: 1.8;
   text-decoration: none;
   text-align: right;
+}
+
+.articles__read:focus-within {
+  border-radius: 4px;
+  outline: 1px solid #fb9902;
+  outline-offset: 3px;
 }
 
 .articles__read:hover .articles__read-link {
@@ -1715,26 +1723,26 @@ only screen and (min-resolution: 240dpi) {
 .articles__read:hover .articles__read-icon {
   color: #fb9902;
 
-  transform: translateX(10px);
+  transform: translateX(6px);
 }
 
 .articles__read-link {
-  margin-right: 40px;
+  margin-right: 36px;
 
   color: inherit;
   text-decoration: none;
 }
 
 .articles__read-link:focus-visible {
-  border-radius: 4px;
-  outline: 1px solid #fb9902;
-  outline-offset: 3px;
+  outline: none;
 }
 
 .articles__read-icon {
   position: absolute;
-  top: 6px;
-  margin-right: 10px;
+  top: 7px;
+  width: 18px;
+  height: 14px;
+  margin-right: 8px;
 
   cursor: pointer;
 
