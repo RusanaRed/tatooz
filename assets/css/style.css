@@ -592,7 +592,12 @@ body.nav-show .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 25px;
+}
+
+.advantages__item {
+  display: flex;
 }
 
 
@@ -620,12 +625,13 @@ body.nav-show .header {
 }
 
 .advantage__image::before {
+  content: "";
   position: absolute; 
   width: 60px;
   height: 60px;
-  top: 25px;
+  top: 50%;
   left: 25px;
-  content: "";
+  transform: translateY(-50%);
 }
 
 .advantage__image--supplies::before {
