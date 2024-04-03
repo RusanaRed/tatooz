@@ -1080,6 +1080,10 @@ only screen and (min-resolution: 240dpi) {
   padding-bottom: 50px;
 }
 
+.reviews .slick-slide:focus-visible {
+  outline: none;
+}
+
 .reviews .slick-dots {
   position: absolute;
   left: 0;
@@ -1120,17 +1124,10 @@ only screen and (min-resolution: 240dpi) {
   transition: background 0.2s linear, transform 0.2s linear;
 }
 
-.reviews .slick-dots button:focus {
-  outline: none;
+.reviews .slick-dots button:focus-visible {
+  outline: 1px solid #fb9902;
+  outline-offset: 1px;
 }
-
-/* .reviews__list {
-  background: url("../images/ajax-loader.gif") no-repeat center;
-}
-
-.reviews__list.slick-initialized {
-  background: none;
-} */
 
 .reviews__item {
   display: none;
