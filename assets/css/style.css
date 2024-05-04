@@ -914,7 +914,7 @@ body.nav-show .header {
 
   padding: 90px 0;
 
-  background: #000 url("../images/promo-image-desktop.jpg") no-repeat center;
+  background: #000 url("../images/promo/promo-image-desktop.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -922,7 +922,7 @@ body.nav-show .header {
 only screen and (min-moz-device-pixel-ratio: 1.5),
 only screen and (min-resolution: 240dpi) {
   .promo { 
-    background-image: url("../images/promo-image-desktop@2x.jpg");
+    background-image: url("../images/promo/promo-image-desktop@2x.jpg");
     background-size: cover; 
   }
 }
@@ -1363,7 +1363,7 @@ only screen and (min-resolution: 240dpi) {
 
   padding: 90px 0 70px;
 
-  background: #000 url("../images/consultation-image-desktop.jpg") no-repeat center;
+  background: #000 url("../images/modal/consultation-image-desktop.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -2029,7 +2029,7 @@ only screen and (min-resolution: 240dpi) {
 .modal__content {
   padding: 70px 80px;
 
-  background-image: url("./../images/consultation-image-desktop.jpg");
+  background-image: url("./../images/modal/consultation-image-desktop.jpg");
   background-repeat: no-repeat;
   background-position: left -350px top -40px;
   border: 1px solid #fff;
@@ -2157,7 +2157,7 @@ only screen and (min-resolution: 240dpi) {
 
   /* Consultation */
   .consultation {
-    background-image: url("../images/consultation-image-tablet.jpg");
+    background-image: url("../images/modal/consultation-image-tablet.jpg");
   }
 
   /* Articles */
@@ -2300,7 +2300,7 @@ only screen and (min-resolution: 240dpi) {
   /* Promo */
   .promo {
     padding: 60px 0;
-    background-image: url("../images/promo-image-tablet.jpg");
+    background-image: url("../images/promo/promo-image-tablet.jpg");
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -2308,7 +2308,7 @@ only screen and (min-resolution: 240dpi) {
   only screen and (min-resolution: 240dpi) {
 
     .promo { 
-      background-image: url("../images/promo-image-tablet@2x.jpg");
+      background-image: url("../images/promo/promo-image-tablet@2x.jpg");
       background-size: cover; 
     }
   }
@@ -2469,7 +2469,7 @@ only screen and (min-resolution: 240dpi) {
 
   /* Consultation */
   .consultation {
-    background-image: url("../images/consultation-image-mobile.jpg");
+    background-image: url("../images/modal/consultation-image-mobile.jpg");
   }
 
   /* Consultation-form */
@@ -2571,7 +2571,7 @@ only screen and (min-resolution: 240dpi) {
 
   /* Promo */
   .promo {
-    background-image: url("../images/promo-image-mobile.jpg");
+    background-image: url("../images/promo/promo-image-mobile.jpg");
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -2579,7 +2579,7 @@ only screen and (min-resolution: 240dpi) {
   only screen and (min-resolution: 240dpi) {
 
     .promo { 
-      background-image: url("../images/promo-image-mobile@2x.jpg");
+      background-image: url("../images/promo/promo-image-mobile@2x.jpg");
       background-size: cover; 
     }
   }
