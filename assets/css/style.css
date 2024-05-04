@@ -466,6 +466,7 @@ body.nav-show .header {
 }
 
 .hero__slogan {
+  max-width: 800px;
   margin-bottom: 16px;
 
   color: #fb9902;
