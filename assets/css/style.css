@@ -367,7 +367,7 @@ body.nav-show .header {
   background: linear-gradient(
     rgba(0, 0, 0, 0.7), 
     rgba(0, 0, 0, 0.7)
-    ), url("../images/hero-bg-1.jpg") no-repeat center top;
+    ), url("../images/hero-slider/slide-1-desktop.jpg") no-repeat center top;
   background-size: cover;
 }
 
@@ -1517,6 +1517,7 @@ only screen and (min-resolution: 240dpi) {
   background: transparent;
   border: 1px solid #ffffff;
   border-radius: 3px;
+  appearance: none;
 
   color: #ffffff;
   font-family: inherit;
