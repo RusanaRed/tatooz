@@ -1169,7 +1169,7 @@ only screen and (min-resolution: 240dpi) {
 }
 
 .reviews__image {
-  height: inherit;
+  min-height: 180px;
 }
 
 .reviews__name {
@@ -2304,6 +2304,10 @@ only screen and (min-resolution: 240dpi) {
     height: 140px;
   }
 
+  .reviews__image {
+    min-height: 140px;
+  }
+
   /* FAQ */
   .faq__wrapper {
     width: 85%;
@@ -2421,11 +2425,6 @@ only screen and (min-resolution: 240dpi) {
   /* Reviews */
   .reviews__content {
     max-width: 70%;
-  }
-
-  .reviews__image-wrapper {
-    width: 140px;
-    height: 140px;
   }
 
   /* Consultation */
@@ -2559,6 +2558,10 @@ only screen and (min-resolution: 240dpi) {
     margin-bottom: 20px;
   }
 
+  .reviews__image {
+    min-height: 120px;
+  }
+
   .reviews__name {
     margin-bottom: 15px;
   }
@@ -2649,7 +2652,6 @@ only screen and (min-resolution: 240dpi) {
 }
 
 
-
 @media (max-width: 599px) {
 
  /* Container */
@@ -2737,6 +2739,10 @@ only screen and (min-resolution: 240dpi) {
   .reviews__image-wrapper {
     width: 90px;
     height: 90px;
+  }
+
+  .reviews__image {
+    min-height: 90px;
   }
 
   /* Consultation */
