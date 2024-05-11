@@ -147,13 +147,24 @@ $(function() {
   /* Yandex map
   ================================================*/
 
-  const center = [59.9339198155389,30.35840941168666];
+  const zoomNotMobile = 17;
+  const zoomForMobile = 16;
+  const centerNotMobile = [59.9339198155389,30.35840941168666];
+  const centerForMobile = [59.93408988, 30.36049595];
   const mark = [59.93409211022794,30.36044789053799];
   
+  if ($(window).width() > 766) {
+    center = centerNotMobile;
+    zoom = zoomNotMobile;
+  } else {
+    center = centerForMobile;
+    zoom = zoomForMobile;
+  }
+
   function init() {
     let map = new ymaps.Map('map', {
       center: center,
-      zoom: 17,
+      zoom: zoom,
     });
 
     let placemark = new ymaps.Placemark(mark, {}, {
@@ -260,8 +271,5 @@ $(function() {
     duration: 700, 
     once: true
   });
-
-
-  
 
 });
