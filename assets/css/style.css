@@ -2448,6 +2448,11 @@ only screen and (min-resolution: 240dpi) {
 
 @media (max-width: 767px) {
 
+  /* Button */
+  .button--small {
+    padding: 6px 10px;
+  }
+
   /* Container */
   .container {
     max-width: 640px;
